@@ -1,122 +1,49 @@
-<html>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>farhanalfatih</title>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
 
-    <title>farhan al fatih</title>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#Home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#EXPERIENCE"> EXPERIENCE </a></li>
-          <li class="hl"><a href="#Contact"> CONTACT </a></li>
-        </ul>
-      </nav>
-    </header>
+    <!-- animate scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- feathet icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <style>
 
 
 
 
-        .hl{
-          margin-left: 30;
-        }
 
-     
-        .nama{
-          margin-left: 100;
-        }
+.ex {
+      margin-left: 40%  ;
+      margin-top: 30 ;
+}
 
-
-    body {
-
-            background-color: F8E8EE;
-              width: 100vw;
-
-           background-position:  ;
-           background-repeat: no-repeat;
-           background-size: cover;
-           padding:0px;
-           margin: 0px;
-           backdrop-filter: blur(5px);
-           height: 500px;
-      overflow-y: scroll;
-
-    }
-
-
-
-    header {
-
-            border: solid rgba(8, 0, 0, 0.3);
-            padding: 0;
-            margin: 0;
-            height: 50;
-           border-radius:3cqh;
-          background-color: F9F5F6;
-
-          }
-
-         nav ul li a {
-                color: #fcf5f5;
-                  text-decoration: none;
-              position: absolute;
-              margin-top: -12;
-           color: rgb(32, 4, 4);
-           margin-left: 0;
-          gap: 2rem  ;
-
-         }
-
-         nav ul li {
-
-                display: inline-block;
-                margin-righ:1px;
-                font-size: 18px;
-                padding: 1px 1px;
-                margin-right: 100px;
-
-         }
-
-
-
-         main a {
-          display: inline-block;
-                margin-righ:1px;
-                font-size: 18px;
-                padding: 1px 1px;
-                margin-right: 100px;
-
-
-
-         }
-
-         p {
+p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
          }
-         #home {
+        
 
-          color: #e2d2d2;
-         position: absolute;
-         top:  30% ;
-         left: 50%;
-         font-family: 'Segoe UI', sans-serif;
-
-        }
+        
 
 
 
          #about {
-          margin-top: 15%;
+          margin-top: 10%;
           font-family: Arial, Helvetica, sans-serif;
          text-align: center;
          display: block;
@@ -132,7 +59,7 @@
         }
 
         #EXPERIENCE {
-    margin-top: 320;
+    margin-top: 320px;
         }
 
         #ac{
@@ -141,8 +68,8 @@
            background-position:  ;
            background-repeat: no-repeat;
            background-size: cover;
-           padding:0px;
-           margin: 0px;
+           padding: 100px
+           margin: 400px;
          filter: blur(5px);
 
         }
@@ -151,6 +78,13 @@
          margin-left:30% ;
          margin-top: 20%;
 
+        }
+
+        #fortfolio {
+
+         
+      margin-top: 150px;
+  
         }
 
 
@@ -162,7 +96,19 @@
 
       }
 
-      .card {
+      .card6 {
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                overflow: hidden;
+                width: 230px;
+                box-shadow: 0 4px 8px 0 rgba(32, 31, 31, 0.2);
+                transition: box-shadow 0.3s;
+               margin-left: -30;
+               background-color: #1f1f1f;
+
+            }
+
+            .card7 {
                 border: 1px solid #ddd;
                 border-radius: 10px;
                 overflow: hidden;
@@ -411,12 +357,17 @@
       margin-top: -400px ;
     }
 
+    #ac {
+      padding: 10px;
+    }
+
+
     @media screen and (max-width: 480px) {
-  .container {
+  .header {
     flex-direction: column;
   }
 
-  .container div {
+  .header div {
     font-size: 2rem;
   }
 }
@@ -430,147 +381,1093 @@
     font-size: 4rem;
   }
 }
-
  
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      font-family: sans-serif;
+    }
 
+    :root {
+      --primary: rgb(59, 59, 255);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* navbar start*/
+
+    .navbar.sticky {
+      background-color: #fff;
+    }
+
+    .navbar {
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 7%;
+      background-color: transparent;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+
+    .navbar-logo {
+      font-style: italic;
+      font-size: 2rem;
+      font-weight: 600;
+      color: black;
+    }
+
+    .navbar-logo span {
+      color: var(--primary);
+    }
+
+    .navbar .navbar-nav a {
+      color: black;
+      display: inline-block;
+      font-size: 20px;
+      margin: 0 1rem;
+    }
+
+    .navbar .navbar-nav a:hover {
+      color: var(--primary);
+    }
+
+    .navbar .navbar-extra a {
+      color: black;
+      margin: 0 0.5rem;
+    }
+
+    .navbar .navbar-extra a:hover {
+      color: var(--primary);
+    }
+
+    #hamburger-menu {
+      display: none;
+    }
+
+    /* hero */
+
+    .home {
+      background-image: url(../img/background-hero.jpg);
+      height: 100vh;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-content {
+      padding: 15% 0 0 18%;
+    }
+
+    .hero-content .wither {
+      color: var(--primary);
+    }
+
+    .hero-content > h2 {
+      padding: 2px 0;
+      font-size: 45px;
+    }
+
+    .hero-content .lorem {
+      padding-bottom: 20px;
+    }
+
+    .hero-content > a {
+      border: 2px solid black;
+      color: black;
+      padding: 10px 10px;
+    }
+
+    .hero-content a:hover {
+      background-color: black;
+      color: #fff;
+    }
+
+    .shop-now a:hover {
+      color: #fff;
+    }
+
+    .hero-content #panah {
+      color: black;
+    }
+
+    .hero-content #panah:hover {
+      color: #fff;
+    }
+
+    .arrow-down {
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      margin: 9% 85%;
+    }
+
+    .arrow-down a i {
+      border: 2px solid black;
+      border-radius: 50%;
+      padding: 15px 20px;
+      cursor: pointer;
+    }
+
+    .arrow-down a i {
+      color: black;
+    }
+
+    .arrow-down a i:hover {
+      background-color: black;
+      color: #fff;
+    }
+
+    
+
+   
+
+    /* footer */
+
+    .container-footer {
+      background-color: #e6c8c8;
+      display: flex;
+      margin-top: 150px;
+      justify-content: space-around;
+      height: 25vh;
+    }
+
+    .footer-social,
+    .footer-menu,
+    .footer-about,
+    .footer-logo {
+      padding-top: 20px;
+      cursor: pointer;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .footer-social h3,
+    .footer-menu h3,
+    .footer-about h3 {
+      border-bottom: 1px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .footer-social a,
+    .footer-menu a,
+    .footer-about a {
+      color: rgb(0, 0, 0);
+    }
+
+    .footer-social ul,
+    .footer-menu ul,
+    .footer-about a i {
+      padding-top: 10px;
+    }
+
+    /* media queries */
+
+    @media (max-width: 870px) {
+      /* navbar */
+      .navbar {
+        padding: 20px 0;
+      }
+
+      /* home */
+      .hero-content {
+        padding: 12% 0 0 0;
+      }
+
+      .home {
+        padding: 15% 0 0 10%;
+      }
+
+      /* shop */
+      .shop-card {
+        margin: 0 30px;
+        gap: 3px;
+      }
+    }
+
+    /* tampilat tab */
+
+    @media (max-width: 768px) {
+      .navbar .navbar-nav a {
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+      }
+
+      .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+      }
+
+      .navbar .navbar-nav a:hover:after {
+        transform: scaleX(0.2);
+      }
+
+      .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 50%;
+        height: 100vh;
+        transition: 0.5s;
+      }
+
+      .navbar .navbar-nav.active {
+        right: 0;
+      }
+
+      #hamburger-menu {
+        display: inline-block;
+      }
+
+      /* home */
+
+      .hero-content {
+        width: 300px;
+        font-size: 10px;
+        padding: 15% 0 0 5%;
+      }
+
+      /* shop */
+      .shop-card {
+        margin: 20px 0;
+      }
+
+      /* store */
+      .card-store {
+        height: 20rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      /* navbar */
+      .navbar-logo {
+        font-size: 25px;
+      }
+
+      /* home */
+      .hero-content {
+        padding-top: 50%;
+      }
+
+      /* shop */
+      .card {
+        font-size: 10px;
+        width: 80%;
+        height: 50%;
+      }
+
+      .card-img img {
+        width: 100%;
+      }
+
+      .eyee .fa-regular {
+        font-size: 10px;
+      }
+
+      .caption-card button {
+        height: 20px;
+      }
+
+      .caption-card button .fa-solid {
+        font-size: 10px;
+      }
+
+      /* store */
+      .offline-container {
+        margin: 0;
+      }
+      .card-store {
+        width: 80%;
+        height: 21rem;
+      }
+
+      .store-img img {
+        width: 100%;
+      }
+
+      /* footer */
+      .container-footer {
+        padding-top: 10%;
+        height: 50%;
+        display: block;
+      }
+
+      .container-footer h3 {
+        border: none;
+      }
+    }
+
+
+    .card99 {
+        background: white;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: transform 0.2s;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+      .card-content {
+        padding: 20px;
+      }
+      .card-content h2 {
+        margin: 0;
+        font-size: 1.2em;
+      }
+      .card-content p {
+        color: #555;
+        margin: 10px 0;
+      }
+      .card-content a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: #007bff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .card-content a:hover {
+        background-color: #0056b3;
+      } .card99 {
+        background: white;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: transform 0.2s;
+        max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: ;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+      .card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+      .card-content {
+        padding: 20px;
+      }
+      .card-content h2 {
+        margin: 0;
+        font-size: 1.2em;
+      }
+      .card-content p {
+        color: #555;
+        margin: 10px 0;
+      }
+      .card-content a {
+        display: inline-block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: white;
+        background-color: #007bff;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+      }
+      .card-content a:hover {
+        background-color: #0056b3;
+      }
+
+      .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: ;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        #jdl {
+            font-size: 1.em;
+            color: #616161;
+            line-height: 1.6;
+           margin-left: 400px  ;
+        }
   </style>
   <body>
-    <img id="ac" src="code.jpg" />
+    <!-- navbar start -->
+    <nav class="navbar">
+        <a href="#" class="navbar-logo"> <span></span></a>
 
-    <main>
-      <section id="Home">
-        <h2 class="nama">I'm farhan al fatih</h2>
+      <div class="navbar-nav">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#EXPERIENCE">EXPERIENCE</a>
+        <a href="#fortfolio">PORTFOLIO </a>
+        
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero start -->
+    
+    <section id="home" class="home">
+      <div
+        class="hero-content"
+        data-aos="zoom-in-down"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        <h2>i'm</h2>
+        <h2>Farhanalfatih </h2>
+      </div>
+    </section>
+    
+    <section id="about">
+      <h3>about me</h3>
+      <br />
+
+      Hello, my name is Farhan,  I live in Lampung, <br>I want to become a web developer,  I first learned a programming <br>language when
+       I'm in 6th grade, I'm interested in programming,
+        when <br> I saw my dad coding. Since then I started to become
+       interested in coding
+    </section>
+
+    <section id="info">
+      <h2 class="skills">skills</h2>
+
+      <div class="card6">
+        <div class="card-content">
+          <h5 class="judul">Programming Language</h5>
+          <p class="Programming">
+            css <br />
+            html<br />
+            javascript
+          </p>
+        </div>
+      </div>
+
+      <div class="card6">
+        <div class="card-content">
+          <h5 class="judul">Framework</h5>
+          <p class="Programming">MySQL</p>
+        </div>
+      </div>
+      <div class="card6">
+        <div class="card-content">
+          <h5 class="judul">design</h5>
+          <p class="Programming"> ui ux </p>
+        </div>
+      </div>
+    </section>
+
+    </section>
+
+    </section>
+
+    <section id="EXPERIENCE">
+      <h2 class="ex">EXPERIENCE</h2>
+
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
+      </style>
+      <!--This is the main container that contains the whole timeline.-->
+      <section class="design-section">
+        <div class="timeline">
+          <!--Well, The reason for this div is to fill space. 
+      This space is technically used for keeping dates, 
+      but I didn't find the need for dates. However, I'll provide 
+      you the styling for dates, so that you can use it if you 
+      wanted to.-->
+          <div class="timeline-empty"></div>
+
+          <!--This is the class where the timeline graphics are 
+      housed in. Note that we have timeline-circle 
+      here for that pointer in timeline.-->
+
+          <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+          </div>
+
+          <div class="timeline-component timeline-content">
+            <p class="tahun">2017-2023</p>
+            <h3>SD muhammadiyah 1 lampung</h3>
+            <p>kls4-5.mulai tertarik dengan network.</p>
+          </div>
+          <div class="timeline-component timeline-content">
+            <p class="tahun">2023-2025</p>
+            <h3>SMP N20 bandar lampung</h3>
+            <p>Sudah mulai tertarik dengan coding.</p>
+          </div>
+
+          <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+          </div>
+
+          <div class="timeline-empty"></div>
+
+          <div class="timeline-empty"></div>
+
+          <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+          </div>
+
+          <div class="timeline-component timeline-content">
+            <p class="tahun">2023</p>
+            <h3>tahfidz Al qur'an juz 30</h3>
+            <p>kelas 6 SD.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="fortfolio" class="offline-store">
+    
+      <div class="container">
+       
+       <h2>PORTFOLIO</h2>
+       <p id="jdl">Here are my latest projects, each thoughtfully developed to provide practical solutions and make a positive difference in their respective fields.</p>
+
+       
+   </div>
+
+   <div class="card99">
+      <img src="https://via.placeholder.com/300x150" alt="Project Image" />
+      <div class="card-content">
+        <h2>Fashion Hub</h2>
+        <p><strong>Tanggal:</strong> Jan - Mar 2024</p>
+        <p>E-commerce platform for clothing and accessories.</p>
+        <a href="http://www.fashionhub.com">Lihat Proyek</a>
+      </div>
+    </div>
+
       
-
-        <img id="gambar" src="learning.png" />
       </section>
-
-      <section id="about">
-        <h3>about me</h3>
-        <br />
-
-        Hello, my name is Farhan,  I live in Lampung, <br>I want to become a web developer,  I first learned a programming <br>language when
-         I'm in 6th grade, I'm interested in programming,
-          when <br> I saw my dad coding. Since then I started to become
-         interested in coding
-      </section>
-
-      <section id="info">
-        <h2 class="skills">skills</h2>
-
-        <div class="card">
-          <div class="card-content">
-            <h5 class="judul">Programming Language</h5>
-            <p class="Programming">
-              css <br />
-              html<br />
-              javascript
-            </p>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-content">
-            <h5 class="judul">Framework</h5>
-            <p class="Programming">MySQL</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <h5 class="judul">design</h5>
-            <p class="Programming"> ui ux </p>
-          </div>
-        </div>
-      </section>
-
-      </section>
-
-      </section>
-
-      <section id="EXPERIENCE">
-        <h2 class="ex">EXPERIENCE</h2>
-
-        <style>
-          @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
-        </style>
-        <!--This is the main container that contains the whole timeline.-->
-        <section class="design-section">
-          <div class="timeline">
-            <!--Well, The reason for this div is to fill space. 
-        This space is technically used for keeping dates, 
-        but I didn't find the need for dates. However, I'll provide 
-        you the styling for dates, so that you can use it if you 
-        wanted to.-->
-            <div class="timeline-empty"></div>
-
-            <!--This is the class where the timeline graphics are 
-        housed in. Note that we have timeline-circle 
-        here for that pointer in timeline.-->
-
-            <div class="timeline-middle">
-              <div class="timeline-circle"></div>
-            </div>
-
-            <div class="timeline-component timeline-content">
-              <p class="tahun">2017-2023</p>
-              <h3>SD muhammadiyah 1 lampung</h3>
-              <p>kls4-5.mulai tertarik dengan network.</p>
-            </div>
-            <div class="timeline-component timeline-content">
-              <p class="tahun">2023-2025</p>
-              <h3>SMP N20 bandar lampung</h3>
-              <p>Sudah mulai tertarik dengan coding.</p>
-            </div>
-
-            <div class="timeline-middle">
-              <div class="timeline-circle"></div>
-            </div>
-
-            <div class="timeline-empty"></div>
-
-            <div class="timeline-empty"></div>
-
-            <div class="timeline-middle">
-              <div class="timeline-circle"></div>
-            </div>
-
-            <div class="timeline-component timeline-content">
-              <p class="tahun">2023</p>
-              <h3>tahfidz Al qur'an juz 30</h3>
-              <p>kelas 6 SD.</p>
-            </div>
-          </div>
-        </section>
-      </section>
-      <section id="Contact">
-        <div class="card2">
-          <div class="icons">
-            <a href=" alfatihf504@gmail.com "
-              ><i class="fa-solid fa-envelope"></i
-            ></a>
-            <a href="https://www.youtube.com/channel/UCWlfQennKe2ybcWtx2Bor1w"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
-            <a href="tiktok.com/@alfatihfarhan20"
-              ><i class="fa-brands fa-tiktok"></i
-            ></a>
-            <a href=" instagram.com/farhanalfatih87 "
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a href="  "><i class="fa-brands fa-github"></i></a>
-          </div>
-        </div>
-
-        <img id="QR" src="QR saweria _4.png" />
-      </section>
-    </main>
-
     <footer>
-      <p class="footer">&copy; 2024-2026 Portofolio by farhan al fatih</p>
+      
+      <div class="container-footer">
+        <div class="footer-logo">
+          <a href="#" class="navbar-logo">i'm <span>farhanalfatih</span></a>
+        </div>
+        <div class="footer-about">
+          <h3>Contact</h3>
+          <a href="#"
+            ><i class="fa-regular fa-envelope"></i> alfatihf504@gmail.com</a
+          >
+        </div>
+        
+        <div class="footer-social">
+          <h3>Social media</h3>
+          <ul>
+            <li>
+              <a href="#instagram.com/farhanalfatih87"><i class="fa-brands fa-instagram"></i> instagram</a>
+            </li>
+            <li>
+              <a href="#tiktok.com/@alfatihfarhan20"><i class="fa-brands fa-tiktok"></i> tiktok</a>
+            </li>
+           
+            
+        </div>
+      </div>
+      
     </footer>
 
+  
+    <!-- footer end -->
+
+    <!-- animate scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
-      alert("!!!Disarankan mode desktop!!!");
+      AOS.init();
+    </script>
+
+    <!-- icon -->
+    <script src="script.js"></script>
+
+    <script>
+      * {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          text-decoration: none;
+          font-family: sans-serif;
+      }
+
+      :root {
+          --primary: rgb(59, 59, 255);
+      }
+
+      html {
+          scroll-behavior: smooth;
+      }
+
+      /* navbar start*/
+
+      .navbar.sticky {
+          background-color: #fff;
+      }
+
+      .navbar {
+          color: black;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem 7%;
+          background-color: transparent;
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 999;
+      }
+
+      .navbar-logo {
+          font-style: italic;
+          font-size: 2rem;
+          font-weight: 600;
+          color: black;
+      }
+
+      .navbar-logo span {
+          color: var(--primary);
+      }
+
+      .navbar .navbar-nav a {
+          color: black;
+          display: inline-block;
+          font-size: 20px;
+          margin: 0 1rem;
+      }
+
+      .navbar .navbar-nav a:hover {
+          color: var(--primary);
+      }
+
+      .navbar .navbar-extra a {
+          color: black;
+          margin: 0 0.5rem;
+      }
+
+      .navbar .navbar-extra a:hover {
+          color: var(--primary);
+      }
+
+      #hamburger-menu {
+          display: none;
+      }
+
+      /* hero */
+
+      .home {
+          background-image: url();
+          height: 100vh;
+          background-attachment: fixed;
+          background-size: cover;
+          background-position: center;
+      }
+
+      .hero-content {
+          padding: 15% 0 0 18%;
+      }
+
+      .hero-content .wither {
+          color: var(--primary);
+      }
+
+      .hero-content>h2 {
+          padding: 2px 0;
+          font-size: 45px;
+      }
+
+      .hero-content .lorem {
+          padding-bottom: 20px;
+      }
+
+      .hero-content>a {
+          border: 2px solid black;
+          color: black;
+          padding: 10px 10px;
+      }
+
+      .hero-content a:hover {
+          background-color: black;
+          color: #fff;
+      }
+
+      .shop-now a:hover {
+          color: #fff;
+      }
+
+      .hero-content #panah {
+          color: black;
+      }
+
+      .hero-content #panah:hover {
+          color: #fff;
+      }
+
+      .arrow-down {
+          font-size: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          margin: 9% 85%;
+      }
+
+      .arrow-down a i {
+          border: 2px solid black;
+          border-radius: 50%;
+          padding: 15px 20px;
+          cursor: pointer;
+      }
+
+      .arrow-down a i {
+          color: black;
+      }
+
+      .arrow-down a i:hover {
+          background-color: black;
+          color: #fff;
+      }
+
+
+      /* shop */
+
+      .shop>h2 {
+          padding-top: 80px;
+          display: flex;
+          justify-content: center;
+      }
+
+      .shop-card {
+          margin: 25px 100px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+      }
+
+      .card {
+          width: 200px;
+          height: 365px;
+          overflow: hidden;
+      }
+
+      .caption-card>button {
+          margin-top: 5px;
+          border-radius: 5px;
+          width: 100%;
+          height: 25px;
+          border: none;
+          cursor: pointer;
+          background-color: var(--primary);
+      }
+
+      .caption-card .eyee {
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .eyee .fa-regular {
+          cursor: pointer;
+          margin: 2px 5px;
+          font-size: 17px;
+      }
+
+      .fa-solid {
+          color: #fff;
+      }
+
+      .card {
+          background-color: rgba(255, 255, 255, 0.974);
+          margin-top: 20px;
+      }
+
+      .card:hover {
+          box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.12);
+          -webkit-box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.12);
+          -moz-box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.12);
+      }
+
+      .card-img img {
+          width: 200px;
+      }
+
+      .caption-card {
+          line-height: 22px;
+      }
+
+      .caption-card .idr {
+          font-weight: 600;
+      }
+
+      .rating-container .fa-star {
+          color: #FFD700;
+
+      }
+
+      .rating-container .fa-star-half-alt {
+          color: #FFD700;
+          opacity: 0.5;
+      }
+
+      /* store */
+
+      .offline-store>h1 {
+          display: flex;
+          padding: 100px 0 30px 0;
+          justify-content: center;
+      }
+
+      .offline-container {
+          margin: 0 100px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+      }
+
+      .card-store {
+          box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.12);
+          -webkit-box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.12);
+          -moz-box-shadow: 1px 7px 5px 0px rgba(0, 0, 0, 0.12);
+          background-color: #fff;
+          margin-bottom: 20px;
+          border-radius: 10px;
+          overflow: hidden;
+          width: 250px;
+          height: 350px;
+      }
+
+      .store-img iframe {
+          width: 300px;
+          height: 200px;
+      }
+
+      .caption-store {
+          padding-top: 10px;
+          text-align: center;
+          line-height: 25px;
+      }
+
+      .caption-store h3 {
+          margin: 10px 0;
+      }
+
+      /* footer */
+
+      .container-footer {
+          background-color: #dedede;
+          display: flex;
+          margin-top: 150px;
+          justify-content: space-around;
+          height: 25vh;
+      }
+
+      .footer-social,
+      .footer-menu,
+      .footer-about,
+      .footer-logo {
+          padding-top: 20px;
+          cursor: pointer;
+          line-height: 30px;
+          text-align: center;
+      }
+
+      .footer-social h3,
+      .footer-menu h3,
+      .footer-about h3 {
+          border-bottom: 1px solid var(--primary);
+          color: var(--primary);
+      }
+
+      .footer-social a,
+      .footer-menu a,
+      .footer-about a {
+          color: black;
+      }
+
+      .footer-social ul,
+      .footer-menu ul,
+      .footer-about a i {
+          padding-top: 10px;
+      }
+
+      /* media queries */
+
+      @media (max-width: 870px) {
+
+          /* navbar */
+          .navbar {
+              padding: 20px 0;
+          }
+
+          /* home */
+          .hero-content {
+              padding: 12% 0 0 0;
+          }
+
+          .home {
+              padding: 15% 0 0 10%;
+          }
+
+          /* shop */
+          .shop-card {
+              margin: 0 30px;
+              gap: 3px;
+          }
+
+      }
+
+      /* tampilat tab */
+
+      @media (max-width: 768px) {
+
+          .navbar .navbar-nav a {
+              color: var(--bg);
+              display: block;
+              margin: 1.5rem;
+              padding: 0.5rem;
+              font-size: 2rem;
+          }
+
+          .navbar .navbar-nav a::after {
+              transform-origin: 0 0;
+          }
+
+          .navbar .navbar-nav a:hover:after {
+              transform: scaleX(0.2);
+          }
+
+          .navbar .navbar-nav {
+              position: absolute;
+              top: 100%;
+              right: -100%;
+              background-color: #fff;
+              width: 50%;
+              height: 100vh;
+              transition: 0.5s;
+          }
+
+          .navbar .navbar-nav.active {
+              right: 0;
+          }
+
+          #hamburger-menu {
+              display: inline-block;
+          }
+
+          /* home */
+
+          .hero-content {
+              width: 300px;
+              font-size: 10px;
+              padding: 15% 0 0 5%;
+          }
+
+          /* shop */
+          .shop-card {
+              margin: 20px 0;
+          }
+
+          /* store */
+          .card-store {
+              height: 20rem;
+          }
+
+      }
+
+      @media (max-width: 400px) {
+
+          /* navbar */
+          .navbar-logo {
+              font-size: 25px;
+          }
+
+          /* home */
+          .hero-content {
+              padding-top: 50%;
+          }
+
+          /* shop */
+          .card {
+              font-size: 10px;
+              width: 80%;
+              height: 50%;
+          }
+
+          .card-img img {
+              width: 100%;
+          }
+
+          .eyee .fa-regular {
+              font-size: 10px;
+          }
+
+          .caption-card button {
+              height: 20px;
+          }
+
+          .caption-card button .fa-solid {
+              font-size: 10px;
+          }
+
+          /* store */
+          .offline-container {
+              margin: 0;
+          }
+          .card-store {
+              width: 80%;
+              height: 21rem;
+          }
+
+          .store-img img {
+              width: 100%;
+          }
+
+          /* footer */
+          .container-footer {
+              padding-top: 10%;
+              height: 50%;
+              display: block;
+          }
+
+          .container-footer h3 {
+              border: none;
+          }
+
+      }
+              feather.replace();
     </script>
   </body>
 </html>
