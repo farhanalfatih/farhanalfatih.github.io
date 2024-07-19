@@ -18,13 +18,19 @@
       }
 
       nav {
-        background: #000000;
-        color: #eb2d2d;
-        padding: 10px 0;
-        text-align: center;
-      }
+  position: fixed; /* Fix the navigation bar to the top */
+  top: 0;          /* Align it to the top of the page */
+  width: 100%;     /* Make it span the full width of the page */
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;   /* Ensure it stays above other content */
+}
+
 
       .menu {
+     
         list-style: none;
         padding: 0;
         margin: 0;
@@ -38,6 +44,7 @@
       }
 
       .menu a {
+      
         color: #fff;
         text-decoration: none;
         padding: 10px 20px;
@@ -133,7 +140,21 @@
 
       @media (max-width: 575.98px) {
 
-       
+        body {
+          background-color: black;
+        }
+
+        #skills  {
+     padding:10px 0 250px 0 ;
+     
+          
+  }
+
+  #EXPERIENCE {
+    padding:10px 0 250px 0 ;
+   
+  }
+ 
 
 
         body {
@@ -145,7 +166,7 @@
         }
 
         #card {
-          padding: 10px 0 800px 0;
+          padding: 10px 0 900px 0;
         }
 
         .card-container88 {
@@ -238,6 +259,18 @@
       /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) { 
   /* Styles */
+
+  #skills  {
+     padding:10px 0 350px 0 ;
+    
+          
+  }
+
+  #EXPERIENCE {
+    padding:10px 0 300px 0 ;
+   
+  }
+ 
    
   body {
     
@@ -327,8 +360,208 @@
 
 
 
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  /* Styles */
+
+  body {
+    
+    min-width: 600px;
+    background-color: #000000;
+   }
+
+ 
+
+  #card {
+          padding: 10px 0 600px 0;
+        
+        }
+       
+  .jdll {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 200px;
+         top: 100px;
+          align-items: center;
+          justify-content: center;
+          color: #2f065e;
+        }
+
+        .jdl {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 25%;
+         top: 150px;
+          color: #2f065e;
+        }
+
+  .image-frame {
+          position: absolute;
+          top:10%;
+          left: 65%;
+          justify-content: center;
+        }
+
+
+        p {
+         
+          position: absolute;
+          top: 250px;
+          left: 10%;
+          font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          font-size: 25px;
+          color: #5a5858;
+          
+        }
+
+        .typewriter {
+          color: rgb(255, 253, 253);
+          font-size: 3em;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 0.15em solid black;
+          animation: typing 2s steps(30, end),
+            blink-caret 0.7s step-end infinite;
+          position: absolute;
+          top: 255px;
+          left: calc(9% + 100px);
+        }
+
+        .ex {
+      font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+      color: #ffffff;
+      padding: 10px;
+      margin-left: -250px  ;
+      margin-top: 350px ;
+
+    }
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  /* Styles */
+
+
+.card-container88 {
+
+  padding: 10px 0 600px 0;
+
+}
+
+
+  #skills  {
+     padding:10px 0 250px 0 ;
+     margin-left: 200px;
+          
+  }
+
+  #EXPERIENCE {
+    padding:10px 0 250px 0 ;
+    margin-left: 200px;
+  }
+ 
+body {
+    
+    min-width: 600px;
+    background-color: #000000;
+   }
+
+ 
+
+  #card {
+          padding: 10px 0 600px 0;
+        
+        }
+       
+  .jdll {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 380px;
+         top: 100px;
+          align-items: center;
+          justify-content: center;
+          color: #2f065e;
+        }
+
+        .jdl {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 25%;
+         top: 150px;
+          color: #2f065e;
+        }
+
+  .image-frame {
+          position: absolute;
+          top:10%;
+          left: 55%;
+          justify-content: center;
+        }
+
+
+        p {
+         
+          position: absolute;
+          top: 250px;
+          left: 10%;
+          font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          font-size: 30px;
+          color: #5a5858;
+          
+        }
+
+        .typewriter {
+          color: rgb(255, 253, 253);
+          font-size: 3em;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 0.15em solid black;
+          animation: typing 2s steps(30, end),
+            blink-caret 0.7s step-end infinite;
+          position: absolute;
+          top: 270px;
+          left: calc(9% + 100px);
+        }
+
+        .ex {
+      font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+      color: #ffffff;
+      padding: 10px;
+      margin-left: -250px  ;
+      margin-top: 350px ;
+
+    }
+
+
    
 
+}
 
 
       @keyframes typing {
