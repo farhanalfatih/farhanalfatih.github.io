@@ -1,1 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Responsive Centered Menu</title>
+    <style>
+      body {
+        background-color: #504747;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      nav {
+  position: fixed; /* Fix the navigation bar to the top */
+  top: 0;          /* Align it to the top of the page */
+  width: 100%;     /* Make it span the full width of the page */
+  background: #000000;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;   /* Ensure it stays above other content */
+}
+
+
+      .menu {
+     
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .menu li {
+        display: inline;
+      }
+
+      .menu a {
+      
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: block;
+      }
+
+      .menu-toggle {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        margin: 0 auto;
+      }
+
+      .hamburger {
+        width: 100%;
+        height: 3px;
+        background: #ece4e4;
+      }
+
+      @media (max-width: 768px) {
+
+       
+        .nama {
+          margin-top: 50px;
+        }
+        .menu {
+          display: none;
+          flex-direction: column;
+          gap: 0;
+        }
+
+        .menu li {
+          display: block;
+        }
+
+        .menu-toggle {
+          display: flex;
+          margin-right: 60px;
+        }
+
+        .menu.active {
+          display: flex;
+        }
+      }
+
+      #card {
+        border: 1px solid #ebd4d4;
+        border-radius: 5px;
+        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        padding: 200px;
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .dot {
+        position: absolute;
+        border-radius: 50%;
+        background: white;
+        box-shadow: 0 0 10px white;
+        opacity: 0.8;
+      }
+
+      #imgf {
+        margin: 0;
+        padding: 0;
+      }
+
+      .image-frame {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid #006983;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .image-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      #about {
+      }
+
+      @media (max-width: 575.98px) {
+
+        body {
+          background-color: black;
+        }
+
+        #skills  {
+     padding:10px 0 250px 0 ;
+     
+          
+  }
+
+  #EXPERIENCE {
+    padding:10px 0 250px 0 ;
+   
+  }
+ 
+
+
+        body {
+          width: 430px;
+        }
+
+        #foto {
+          position: absolute;
+        }
+
+        #card {
+          padding: 10px 0 900px 0;
+        }
+
+        .card-container88 {
+          display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 800px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 40px 90px ;
+        margin-bottom: 20px; 
+        }
+       
+
+        .jdl1 {
+          font-family: "Poppins", sans-serif;
+          font-weight: 700;
+          font-style: normal;
+          font-size: 16px;
+          color: #5a5858;
+          margin: 1px 1px 1px;
+          margin-top: 100px;
+          margin-left: -15px;
+        }
+
+        .jdll {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 38%;
+          bottom: 55%;
+          align-items: center;
+          justify-content: center;
+          color: #2f065e;
+        }
+
+        .jdl {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 25%;
+          bottom: 50%;
+          color: #2f065e;
+        }
+
+        .image-frame {
+          position: absolute;
+          top: 10%;
+          left: 29%;
+          justify-content: center;
+        }
+
+        p {
+          font-size: 2em;
+          color: rgb(255, 246, 246);
+          position: absolute;
+          top: 350px;
+          left: 12%;
+          font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+        }
+
+        .typewriter {
+          color: rgb(255, 253, 253);
+          font-size: 3em;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 0.15em solid black;
+          animation: typing 2s steps(30, end),
+            blink-caret 0.7s step-end infinite;
+          position: absolute;
+          top: 380px;
+          left: calc(8% + 100px);
+        }
+
+        .dot {
+          display: block;
+        }
+      }
+
+      /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  /* Styles */
+
+  #skills  {
+     padding:10px 0 350px 0 ;
+    
+          
+  }
+
+  #EXPERIENCE {
+    padding:10px 0 300px 0 ;
+   
+  }
+ 
+   
+  body {
+    
+    min-width: 600px;
+    background-color: #000000;
+   }
+
+ 
+
+  #card {
+          padding: 10px 0 600px 0;
+        
+        }
+       
+  .jdll {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 200px;
+         top: 100px;
+          align-items: center;
+          justify-content: center;
+          color: #2f065e;
+        }
+
+        .jdl {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 25%;
+         top: 150px;
+          color: #2f065e;
+        }
+
+  .image-frame {
+          position: absolute;
+          top:10%;
+          left: 65%;
+          justify-content: center;
+        }
+
+
+        p {
+         
+          position: absolute;
+          top: 250px;
+          left: 10%;
+          font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          font-size: 25px;
+          color: #5a5858;
+          
+        }
+
+        .typewriter {
+          color: rgb(255, 253, 253);
+          font-size: 3em;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 0.15em solid black;
+          animation: typing 2s steps(30, end),
+            blink-caret 0.7s step-end infinite;
+          position: absolute;
+          top: 255px;
+          left: calc(9% + 100px);
+        }
+
+        .ex {
+      font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+      color: #ffffff;
+      padding: 10px;
+      margin-left: -250px  ;
+      margin-top: 350px ;
+
+    }
+
+   
+}
+
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  /* Styles */
+
+  body {
+    
+    min-width: 600px;
+    background-color: #000000;
+   }
+
+ 
+
+  #card {
+          padding: 10px 0 600px 0;
+        
+        }
+       
+  .jdll {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 200px;
+         top: 100px;
+          align-items: center;
+          justify-content: center;
+          color: #2f065e;
+        }
+
+        .jdl {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 25%;
+         top: 150px;
+          color: #2f065e;
+        }
+
+  .image-frame {
+          position: absolute;
+          top:10%;
+          left: 65%;
+          justify-content: center;
+        }
+
+
+        p {
+         
+          position: absolute;
+          top: 250px;
+          left: 10%;
+          font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          font-size: 25px;
+          color: #5a5858;
+          
+        }
+
+        .typewriter {
+          color: rgb(255, 253, 253);
+          font-size: 3em;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 0.15em solid black;
+          animation: typing 2s steps(30, end),
+            blink-caret 0.7s step-end infinite;
+          position: absolute;
+          top: 255px;
+          left: calc(9% + 100px);
+        }
+
+        .ex {
+      font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+      color: #ffffff;
+      padding: 10px;
+      margin-left: -250px  ;
+      margin-top: 350px ;
+
+    }
+
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  /* Styles */
+
+
+.card-container88 {
+
+  padding: 10px 0 600px 0;
+
+}
+
+
+  #skills  {
+     padding:10px 0 250px 0 ;
+     margin-left: 200px;
+          
+  }
+
+  #EXPERIENCE {
+    padding:10px 0 250px 0 ;
+    margin-left: 200px;
+  }
+ 
+body {
+    
+    min-width: 600px;
+    background-color: #000000;
+   }
+
+ 
+
+  #card {
+          padding: 10px 0 600px 0;
+        
+        }
+       
+  .jdll {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 380px;
+         top: 100px;
+          align-items: center;
+          justify-content: center;
+          color: #2f065e;
+        }
+
+        .jdl {
+          font-size: 35px;
+          align-items: center;
+          overflow: hidden;
+          white-space: nowrap;
+          position: absolute;
+          left: 25%;
+         top: 150px;
+          color: #2f065e;
+        }
+
+  .image-frame {
+          position: absolute;
+          top:10%;
+          left: 55%;
+          justify-content: center;
+        }
+
+
+        p {
+         
+          position: absolute;
+          top: 250px;
+          left: 10%;
+          font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          font-size: 30px;
+          color: #5a5858;
+          
+        }
+
+        .typewriter {
+          color: rgb(255, 253, 253);
+          font-size: 3em;
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 0.15em solid black;
+          animation: typing 2s steps(30, end),
+            blink-caret 0.7s step-end infinite;
+          position: absolute;
+          top: 270px;
+          left: calc(9% + 100px);
+        }
+
+        .ex {
+      font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+      color: #ffffff;
+      padding: 10px;
+      margin-left: -250px  ;
+      margin-top: 350px ;
+
+    }
+
+
+   
+
+}
+
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 60%;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: black;
+        }
+      }
+ 
+
+      .card-container88 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 800px;
+        border: 1px solid #030303;
+        border-radius: 10px;
+        background-color: #000000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 60px 40px 90px ;
+        margin-bottom: 20px;
+      }
+      .logos {
+        display: flex;
+        justify-content: center;
+     
+        
+        flex-wrap: wrap;
+      }
+      .logos img {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+        border-radius: 60%;
+        background-color: #000000;
+      }
+      .dns{
+        font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+        color: #fdf6f6;
+      }
+
+      cardqq{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 800px;
+        border: 1px solid #cecece;
+        border-radius: 10px;
+        background-color: #000000;
+        box-shadow: 0 4px 8px rgba(53, 53, 53, 0.1);
+        padding: 10px 10px ;
+        margin-bottom: 20px; 
+      }
+
+
+
+      /*  timelane */
+
+      #EXPERIENCE {
+        margin-top: -50px;
+      }
+
+      @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
+    =============================================================================================
+    
+    
+    
+    .design-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #1f1f1f;
+      min-height: 100vh;
+      padding: 100px 0;
+      font-family: Jost;
+    }
+
+    .design {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .timeline {
+      width: 80%;
+      height: auto;
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .timeline-content {
+      padding: 20px;
+      background: #000000;
+      -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+      box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+      border-radius: 5px;
+      color: white;
+      padding: 1.75rem;
+      transition: 0.4s ease;
+      overflow-wrap: break-word !important;
+      margin: 1rem;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    .timeline-component {
+      margin: 0px 20px 20px 20px;
+    }
+
+     .card-containermm {
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 800px;
+        border: 1px solid #030303;
+        border-radius: 10px;
+        background-color: #000000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px 40px 90px ;
+        margin-bottom: 20px;
+     }
+
+    @media screen and (min-width: 768px) {
+      .timeline {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
+      }
+      .timeline-middle {
+        position: relative;
+        background-image: linear-gradient(45deg, #af02ff, #2e00fd, #4c00ff);
+        width: 3px;
+        height: 100%;
+      }
+      .main-middle {
+        opacity: 0;
+      }
+      .timeline-circle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, #4e21f2, #003bfd, #2600ff);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+    }
+
+    .ex {
+      font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+      color: #ffffff;
+      padding: 30px;
+      margin-left: 250  ;
+      margin-top: 80px ;
+
+    }
+      
+   
+
+      footer {
+        color: #f3e9e9;
+        background-color: #000000;
+        margin-top: -20px;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+        
+      }
+
+      .card-container {
+    background-size: cover; /* Membuat gambar menutupi seluruh kontainer */
+    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
+    background-position: center; /* Memposisikan gambar di tengah */
+  }
+
+      @media (min-width: 768px) and (max-width: 991.98px) { 
+  .card-container88 {
+    width: 90%;
+  }
+
+ 
+}
+
+
+      @media (min-width: 768px) and (max-width: 991.98px) { 
+  .card-containermm {
+    width: 90%;
+  }
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <section id="about">
+      <nav>
+        <div class="menu-toggle" id="menu-toggle">
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+          <div class="hamburger"></div>
+        </div>
+        <ul class="menu" id="menu">
+          <li><a href="#about" >About</a></li>
+          <li><a href="#skills">fortfolio</a></li>
+          <li><a href="#EXPERIENCE">Experience</a></li>
+          
+        </ul>
+      </nav>
+    </section>
+      <div class="card-container">
+        <div id="card">
+          <div class="image-frame" id="imgf">
+            <img src="foottoo.jpg" alt="Deskripsi Gambar" />
+          </div>
+          <h1 class="jdll">Hai' I am</h1>
+          <h1 class="jdl">Farhan Al Fatih</h1>
+          <p>I'am</p>
+          <hp class="typewriter">Programmer</hp>
+          <p class="jdl1">
+            <br />I am a motivated and versatile individual, who is motivated
+            and versatile. Always eager to face new challenges by studying. I am
+            dedicated to delivering quality results and a growth mindset. I am
+            ready to make a meaningful contribution.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+
+      <div class="card-container88">
+        <cardqq>
+        <h2 class="dns"> skills </h2>
+        <hj class="dns"> I taught myself by watching tutorials on YouTube </hj>
+      </cardqq>
+        <div class="logos">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+            alt="HTML5"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+            alt="CSS3"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="JavaScript"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+            alt="PHP"
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg"
+            alt="MySQL"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="EXPERIENCE">
+    <div class="card-containermm">
+      <h1 class="ex">EXPERIENCE</h1>
+
+      <!--This is the main container that contains the whole timeline.-->
+      <section class="design-section">
+        <div class="timeline">
+          <!--Well, The reason for this div is to fill space. 
+    This space is technically used for keeping dates, 
+    but I didn't find the need for dates. However, I'll provide 
+    you the styling for dates, so that you can use it if you 
+    wanted to.-->
+          <div class="timeline-empty"></div>
+
+          <!--This is the class where the timeline graphics are 
+    housed in. Note that we have timeline-circle 
+    here for that pointer in timeline.-->
+
+          <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+          </div>
+
+          <div class="timeline-component timeline-content">
+            <ph class="tahun">2017-2023</ph>
+            <gg >SD muhammadiyah 1 lampung</gg>
+            
+          </div>
+          <div class="timeline-component timeline-content">
+            <ph class="tahun">2023-2025</ph>
+            <h3>SMP N20 bandar lampung</h3>
+           
+          </div>
+
+          <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+          </div>
+
+          <div class="timeline-empty"></div>
+
+          <div class="timeline-empty"></div>
+
+          <div class="timeline-middle">
+            <div class="timeline-circle"></div>
+          </div>
+
+          <div class="timeline-component timeline-content">
+            <ph class="tahun">2023</ph>
+            <h3>tahfidz  qur'an juz 30</h3>
+           
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      &copy; 2024  by farhanalfatih  
+    </footer>
+    <script>
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("menu");
+          menu.classList.toggle("active");
+        });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const card = document.getElementById("card");
+        const numDots = 50;
+        const dots = [];
+
+        for (let i = 0; i < numDots; i++) { 
+          const dot = document.createElement("div");
+          dot.classList.add("dot");
+          dot.style.width = `${Math.random() * 5 + 2}px`;
+          dot.style.height = dot.style.width;
+          dot.style.left = `${Math.random() * card.offsetWidth}px`;
+          dot.style.top = `${Math.random() * card.offsetHeight}px`;
+          dot.dx = Math.random() * 2 - 1;
+          dot.dy = Math.random() * 2 - 1;
+          card.appendChild(dot);
+          dots.push(dot);
+        }
+
+        function animate() {
+          dots.forEach((dot) => {
+            let x = parseFloat(dot.style.left);
+            let y = parseFloat(dot.style.top);
+
+            x += dot.dx;
+            y += dot.dy;
+
+            if (x < 0 || x > card.offsetWidth) dot.dx *= -1;
+            if (y < 0 || y > card.offsetHeight) dot.dy *= -1;
+
+            dot.style.left = `${x}px`;
+            dot.style.top = `${y}px`;
+          });
+          requestAnimationFrame(animate);
+        }
+
+        animate();
+      });
+    </script>
+
+
+  </body>
+</html>
 
