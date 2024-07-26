@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,6 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- animate scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- feathet icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
     <title>Responsive Centered Menu</title>
     <style>
       body {
@@ -460,7 +472,7 @@
 .card-container88 {
 
   padding: 10px 0 600px 0;
-
+  
 }
 
 
@@ -484,7 +496,7 @@ body {
  
 
   #card {
-          padding: 10px 0 600px 0;
+          padding: 10px 0 800px 0;
         
         }
        
@@ -743,16 +755,47 @@ body {
     }
       
    
-
+ /* foother */
       footer {
+        border: 2px solid #fdfdfd;
         color: #f3e9e9;
         background-color: #000000;
-        margin-top: -20px;
-        padding: 10px;
+        margin-top: 50px;
+        padding: 12px;
         justify-content: center;
         text-align: center;
-        
+       
+        border-radius: 5px;
       }
+
+      .icon {
+      display: flex;
+      gap: 15px;
+    }
+
+    .icon a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      transition: color 0.3s, transform 0.3s;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .icon a i {
+      margin-right: 8px;
+    }
+
+    .icon a:hover {
+      color: #f39c12;
+      transform: scale(1.1);
+    }
+
+    .icon a:hover i {
+      color: #f39c12;
+    }
+ /* and foother */
 
       .card-container {
     background-size: cover; /* Membuat gambar menutupi seluruh kontainer */
@@ -775,7 +818,78 @@ body {
   }
 }
 
+  /* Media query untuk perangkat besar */
+  @media (min-width: 1200px) {
+      p{
+        font-size: calc(18px + 1vw); /* Sesuaikan ukuran teks untuk perangkat besar */
+      }
+    }
 
+     /* card cece */
+     .oo {
+      color: white;
+      
+     }
+     #cc {
+      
+        background-color:black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            padding: 50px;
+        }
+        .card-containeraa {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            width: 100%;
+        }
+        .card_bb {
+          background-color: rgb(0, 0, 0);
+            border: 1px solid #757575;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin: 10px auto;
+            transition: transform 0.3s;
+        }
+        .card_bb img {
+            width: 100%;
+            height: auto;
+        }
+        .card_bb
+        .descriptionzz {
+          color: white;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+        .card_bb:hover {
+            transform: scale(1.05);
+        }
+        @media (min-width: 600px) {
+           #cc {
+                display: flex;
+                justify-content: center;
+            }
+            .card-containeraa {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .card_bb {
+                max-width: calc(50% - 20px); /* Two cards per row */
+            }
+        }
+        @media (min-width: 900px) {
+            .card_bb {
+                max-width: calc(33.33% - 20px); /* Three cards per row */
+            }
+        }
 
     </style>
   </head>
@@ -791,6 +905,7 @@ body {
           <li><a href="#about" >About</a></li>
           <li><a href="#skills">fortfolio</a></li>
           <li><a href="#EXPERIENCE">Experience</a></li>
+          <li><a href="#cc">projek</a></li>
           
         </ul>
       </nav>
@@ -899,8 +1014,40 @@ body {
         </div>
       </div>
     </section>
+
+     <section id="cc">
+      <h1 class="oo"> projek</h1>
+    <div class="card-containeraa">
+        <div class="card_bb">
+            <img src="https://via.placeholder.com/300x200" alt="Image">
+            <div class="descriptionzz">
+                <h2>Title</h2>
+               
+            </div>
+        </div>
+        <div class="card_bb">
+            <img src="https://via.placeholder.com/300x200" alt="Image">
+            <div class="descriptionzz">
+                <h2>Title</h2>
+               
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+  </section>
+
     <footer>
       &copy; 2024  by farhanalfatih  
+
+      <div class="sosmed" >
+        <div class="icon">
+           <a href="#https://github.com/farhanalfatih"><i class="fa-brands fa-github"></i>github</a>
+           <a href="#https://www.instagram.com/kodee_kuu?igsh=MXUyNDhha2E2YWgxbw=="><i class="fa-brands fa-instagram"></i>instagram</a>
+           <a href="#https://www.youtube.com/@Farhann87"><i class="fa-brands fa-youtube"></i>youtube</a>
+           <a href="#https://www.tiktok.com/@alnassrsuiii?_t=8oLIpVllTcK&_r=1"><i class="fa-brands fa-tiktok"></i>tiktok</a>
+          
+        </div>
+         </div>
     </footer>
     <script>
       document
