@@ -151,6 +151,11 @@
       }
 
       @media (max-width: 575.98px) {
+        
+        card-containeraa {
+          
+          margin-left: 8%;
+        }
 
         body {
           background-color: #160F30k;
@@ -179,18 +184,23 @@
         }
 
         #card {
-          padding: 10px 0 900px 0;
           
+          padding: 10px 500px 800px 0;
+          
+        }
+        
+        .card-containermm {
+          margin-left: 8%;
         }
 
         .card-container88 {
-         
+         margin-left: 8%;
           display: flex;
         flex-direction: column;
         align-items: center;
         width: 80%;
         max-width: 800px;
-        border: 1px solid #ddd;
+        
         border-radius: 10px;
         background-color: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -469,7 +479,7 @@
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  /* Styles */
+  /* Styles */
 
 
 .card-container88 {
@@ -605,12 +615,13 @@ body {
         align-items: center;
         width: 80%;
         max-width: 800px;
-        border: 1px solid #030303;
-        border-radius: 10px;
+        
+        border-radius: 30px;
         background-color: #000000;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 60px 40px 90px ;
+        padding: 60px 50px 90px ;
         margin-bottom: 20px;
+      
       }
       .logos {
         display: flex;
@@ -634,6 +645,7 @@ body {
       }
 
       cardqq{
+        border-radius: 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -711,7 +723,7 @@ body {
         align-items: center;
         width: 80%;
         max-width: 800px;
-        border: 1px solid #030303;
+        
         border-radius: 10px;
         background-color: #000000;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -760,7 +772,7 @@ body {
    
  /* foother */
       footer {
-        border: 2px solid #fdfdfd;
+        
         color: #f3e9e9;
         background-color: #000000;
         margin-top: 50px;
@@ -909,7 +921,7 @@ body {
           <li><a href="#skills">Portfolio</a></li>
           <li><a href="#EXPERIENCE">Experience</a></li>
           <li><a href="#cc">Projek</a></li>
-          
+          <li><a href="blogg.html">My blog</a></li>
         </ul>
       </nav>
     </section>
@@ -1077,10 +1089,10 @@ body {
         for (let i = 0; i < numDots; i++) { 
           const dot = document.createElement("div");
           dot.classList.add("dot");
-          dot.style.width = `${Math.random() * 5 + 2}px`;
+          dot.style.width = ${Math.random() * 5 + 2}px;
           dot.style.height = dot.style.width;
-          dot.style.left = `${Math.random() * card.offsetWidth}px`;
-          dot.style.top = `${Math.random() * card.offsetHeight}px`;
+          dot.style.left = ${Math.random() * card.offsetWidth}px;
+          dot.style.top = ${Math.random() * card.offsetHeight}px;
           dot.dx = Math.random() * 2 - 1;
           dot.dy = Math.random() * 2 - 1;
           card.appendChild(dot);
@@ -1098,8 +1110,8 @@ body {
             if (x < 0 || x > card.offsetWidth) dot.dx *= -1;
             if (y < 0 || y > card.offsetHeight) dot.dy *= -1;
 
-            dot.style.left = `${x}px`;
-            dot.style.top = `${y}px`;
+            dot.style.left = ${x}px;
+            dot.style.top = ${y}px;
           });
           requestAnimationFrame(animate);
         }
