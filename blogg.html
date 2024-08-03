@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    <style>
+      body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #140a55, #010022);
+            color: white;
+        }
+
+        
+      #judull {
+        font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 16px; /* Default font size */
+            color: white;
+      }
+
+      h1 {
+        font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            color: white;
+      }
+ 
+
+        p {
+
+            font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 16px; /* Default font size */
+            color: rgb(0, 0, 0);
+        }
+
+        @media (max-width: 1200px) {
+            p {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 992px) {
+            p {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            p {
+                font-size: 13px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .container {
+            display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        max-width: 800px;
+        
+        border-radius: 30px;
+        background-color: #000000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px 30px 80px ;
+        margin-bottom: 20px;
+        }
+
+
+
+        #home:checked ~ .navbar ul li label[for="home"],
+        #about:checked ~ .navbar ul li label[for="about"],
+        #services:checked ~ .navbar ul li label[for="services"],
+        #contact:checked ~ .navbar ul li label[for="contact"] {
+          background-color: #ffebcd; /* Background color awal */
+            color: #333; /* Mengubah warna teks menjadi gelap */
+            padding: 19px 25px; /* Tambahkan padding 5px pada semua sisi */
+        }
+
+        #home:checked ~ .content #home-card,
+        #about:checked ~ .content #about-card,
+        #services:checked ~ .content #services-card,
+        #contact:checked ~ .content #contact-card {
+            display: block;
+        }
+    footer {
+        justify-content: center;
+        align-items: center;
+        background-color: #494949;
+        padding: 10px;
+        margin-top: 500%;
+    }
+      
+    </style>
+    <title>My blog</title>
+
+</head>
+<body>
+    <div class="container">
+  <h1> My blogg</h1>
+     <p id="judull"> blog ini akan saya update tiap bulan"/</p>
+
+    </div>
+
+    <footer>
+        &copy farhan al fatih
+    </footer>
+</body>
+</html>
