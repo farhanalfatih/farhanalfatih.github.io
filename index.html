@@ -24,6 +24,7 @@
     <title>Farhan al fatih </title>
     <style>
       body {
+       
         background-color: #000000;
         margin: 0;
         font-family: Arial, sans-serif;
@@ -905,7 +906,64 @@ body {
                 max-width: calc(33.33% - 20px); /* Three cards per row */
             }
         }
+    
 
+         /* nexte */
+
+         #tombol {
+          padding: 50px;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+         }
+
+         .animated-buttonbb {
+         justify-content: center;
+          text-align: center;
+         align-items: center;
+          place-items: center;
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .animated-buttonbb::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
+            border-radius: 50%;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+        }
+
+        .animated-buttonbb:hover::before {
+            width: 0;
+            height: 0;
+            top: 50%;
+            left: 50%;
+        }
+
+        .animated-buttonbb:hover {
+            background-color: #2980b9;
+            transform: scale(1.1);
+        }
+
+        .animated-buttonbb span {
+            position: relative;
+            z-index: 1;
+        }
     </style>
   </head>
   <body>
@@ -920,8 +978,9 @@ body {
           <li><a href="#about" >About</a></li>
           <li><a href="#skills">Portfolio</a></li>
           <li><a href="#EXPERIENCE">Experience</a></li>
-          <li><a href="#cc">Projek</a></li>
           <li><a href="blogg.html">My blog</a></li>
+          <li><a href="#cc">Projek</a></li>
+          
         </ul>
       </nav>
     </section>
@@ -1029,6 +1088,9 @@ body {
         </div>
       </div>
     </section>
+     <section id="tombol">
+    <a href="blogg.html" class="animated-buttonbb"><span>My blogg</span></a>
+  </section>
 
      <section id="cc">
       <h1 class="oo"> PROJEK</h1>
@@ -1060,6 +1122,9 @@ body {
     </div>
   </section>
 
+
+ 
+
     <footer>
       &copy; 2024  by farhanalfatih  
 
@@ -1073,6 +1138,15 @@ body {
         </div>
          </div>
     </footer>
+    <script> 
+
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("menu");
+          menu.classList.toggle("active");
+        });
+    </script>
     <script>
       document
         .getElementById("menu-toggle")
@@ -1119,7 +1193,46 @@ body {
         animate();
       });
     </script>
+<script>
 
+document.addEventListener("DOMContentLoaded"), () => {
+        const card = document.getElementById("card");
+        const numDots = 50;
+        const dots = [];
+
+        for (let i = 0; i < numDots; i++) { 
+          const dot = document.createElement("div");
+          dot.classList.add("dot");
+          dot.style.width = ${Math.random() * 5 + 2}px;
+          dot.style.height = dot.style.width;
+          dot.style.left = ${Math.random() * card.offsetWidth}px;
+          dot.style.top = ${Math.random() * card.offsetHeight}px;
+          dot.dx = Math.random() * 2 - 1;
+          dot.dy = Math.random() * 2 - 1;
+          card.appendChild(dot);
+          dots.push(dot);
+        }
+
+        function animate() {
+          dots.forEach((dot) => {
+            let x = parseFloat(dot.style.left);
+            let y = parseFloat(dot.style.top);
+
+            x += dot.dx;
+            y += dot.dy;
+
+            if (x < 0 || x > card.offsetWidth) dot.dx *= -1;
+            if (y < 0 || y > card.offsetHeight) dot.dy *= -1;
+
+            dot.style.left = ${x}px;
+            dot.style.top = ${y}px;
+          });
+          requestAnimationFrame(animate);
+        }
+
+        animate();
+      });
+</script>
 
   </body>
 </html>
