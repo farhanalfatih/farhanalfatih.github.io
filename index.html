@@ -973,6 +973,129 @@ body {
             position: relative;
             z-index: 1;
         }
+
+      /* Track bar */
+    .track-bar {
+      height: 4px;
+      background-color: #1e90ff;
+      margin-bottom: 30px;
+      width: 100%;
+    }
+
+    .container99 {
+      padding: 90px 0 90px 0;
+      background-color: #000000;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px; /* Tambahkan gap antara card */
+    }
+    
+
+    .service-card {
+      display: inline-block;
+      width: 300px;
+      background-color: #000000;
+      border: 2px solid transparent;
+      border-radius: 10px;
+      padding: 90px 0 60px 0;
+      margin: 10px;
+      text-align: center;
+      box-shadow: 0 0 20px #1e90ff, 0 0 40px #1e90ff;
+      transition: 0.3s;
+      position: relative;
+    }
+
+    .service-card:hover {
+      border: 2px solid gold;
+      box-shadow: 0 0 20px gold, 0 0 40px gold;
+    }
+
+    .service-icon {
+      position: relative;
+      top: -40%;
+      
+      font-size: 45px;
+      color: #1e90ff;
+      margin-bottom: 11px;
+    }
+
+    .service-title {
+      position: relative;
+      top: -35%;
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .service-description {
+      position: relative;
+      top: -30%;
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .buttonn {
+      position: relative;
+      top: -20px;
+      padding: 10px 20px;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      background-color: #1e90ff;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      border-radius: 30px;
+    }
+
+    .buttonn:hover {
+      border: 2px solid rgb(0, 0, 0);
+      background-color: #2600ff;
+    }
+
+    .section-title {
+      text-align: center;
+      color: #ffffff;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .section-title:hover {
+      color: #1e90ff;
+    }
+
+    @media (max-width: 768px) {
+      .container99 {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0;
+        gap: 30px; /* Tambahkan gap antara card */
+      }
+
+      .service-card {
+        width: 90%;
+        padding: 60px 0;
+        margin: 20px 0;
+      }
+
+      .service-icon {
+        font-size: 50px;
+        margin-bottom: 15px;
+      }
+
+      .service-title {
+        font-size: 26px;
+      }
+
+      .service-description {
+        font-size: 18px;
+      }
+    }
+
+
     </style>
   </head>
   <body>
@@ -1012,6 +1135,48 @@ body {
       </div>
     </section>
 
+    <div class="section-title">My Services</div>
+
+    <div class="track-bar"></div>
+
+    <div class="container99">
+
+      
+
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <div class="service-title"> UI/UX Design</div>
+        <div class="service-description">
+          I provide professional UI/UX design services that focus on intuitive, aesthetic, and functional user interfaces. I ensure visually appealing and effective designs to achieve your business goals for websites, mobile apps, and other digital platforms.
+        </div>
+        <a href="https://www.instagram.com/kodee_kuu?igsh=MXUyNDhha2E2YWgxbw=="><button class="buttonn">contact me</button></a>
+      </div>
+  
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <div class="service-title">Frontend Dev </div>
+        <div class="service-description">
+          I offer frontend development services that focus on creating engaging and responsive user interfaces. With expertise in HTML, CSS, and JavaScript, I am committed to ensuring that each project not only looks good but also functions well across a variety of platforms.
+        </div>
+        <a href="https://www.instagram.com/kodee_kuu?igsh=MXUyNDhha2E2YWgxbw=="><button class="buttonn">contact me</button></a>
+      </div>
+  
+      <div class="service-card">
+        <div class="service-icon">
+          <i class="fas fa-paint-brush"></i>
+        </div>
+        <div class="service-title">Graphic Design</div>
+        <div class="service-description">
+          I provide creative graphic design services that will bring your ideas into stunning visual works. I ensure that each design is not only aesthetic, but also effective in conveying the message, I am ready to help you build a strong and memorable visual identity
+        </div>
+        <a href="https://www.instagram.com/kodee_kuu?igsh=MXUyNDhha2E2YWgxbw=="><button class="buttonn">contact me</button></a>
+      </div>
+    </div>
+  
     <section id="skills">
 
       <div class="card-container88">
