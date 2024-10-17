@@ -1,984 +1,224 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    />
+<head>
 
-    <!-- animate scroll -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <!-- feathet icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <title>Farhan al fatih </title>
+     <!-- font awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- animasi style end animasi style  -->
+   
+    <!-- font google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>projek baru</title>
     <style>
-      body {
-       
-        background-color: #000000;
-        margin: 0;
-        font-family: Arial, sans-serif;
-      }
-
-      nav {
-  position: fixed; /* Fix the navigation bar to the top */
-  top: 0;          /* Align it to the top of the page */
-  width: 100%;     /* Make it span the full width of the page */
-  background: #000000;
-  color: #ffffff;
-  padding: 10px 0;
-  text-align: center;
-  z-index: 1000;   /* Ensure it stays above other content */
-}
-
-
-      .menu {
-     
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-      }
-
-      .menu li {
-        display: inline;
-      }
-
-      .menu a {
-      
-        color: #fff;
-        text-decoration: none;
-        padding: 10px 20px;
-        display: block;
-      }
-
-      .menu-toggle {
-        display: none;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 30px;
-        height: 25px;
-        cursor: pointer;
-        margin: 0 auto;
-      }
-
-      .hamburger {
-        width: 100%;
-        height: 3px;
-        background: #ece4e4;
-      }
-
-      @media (max-width: 768px) {
-
-
-       
-        .nama {
-          margin-top: 50px;
-        }
-        .menu {
-          display: none;
-          flex-direction: column;
-          gap: 0;
-        }
-
-        .menu li {
-          display: block;
-        }
-
-        .menu-toggle {
-          display: flex;
-          margin-right: 60px;
-        }
-
-        .menu.active {
-          display: flex;
-        }
-      }
-
-      #card {
-        border-radius: 5px;
-        box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
-        padding: 200px;
-        display: flex;
-        background-color: #000000;
-        position: relative;
-        overflow: hidden;
-      }
-
-      .dot {
-        position: absolute;
-        border-radius: 50%;
-        background: white;
-        box-shadow: 0 0 10px white;
-        opacity: 0.8;
-      }
-
-      #imgf {
-        margin: 0;
-        padding: 0;
-      }
-
-      .image-frame {
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        overflow: hidden;
-        border: 5px solid #006983;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .image-frame img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 50%;
-      }
-
-      #about {
-      }
-
-      @media (max-width: 575.98px) {
-
-       
-        
-        card-containeraa {
-          
-          margin-left: 8%;
-        }
-
         body {
-          background-color: #160F30k;
+             height: 100vh;
+            font-family: "Open Sans", serif;
+            font-weight: 800;
+            font-style: normal;
         }
 
-        #skills  {
-         
-     padding:10px 0 250px 0 ;
-     
-          
-  }
-
-  #EXPERIENCE {
-    padding:10px 0 250px 0 ;
-   
-  }
- 
-
-
-        body {
-          width: 430px;
-        }
-
-        #foto {
-          position: absolute;
-        }
-
-        #card {
-          
-          padding: 10px 500px 800px 0;
-          
-        }
         
-        .card-containermm {
-          margin-left: 8%;
-        }
-
-        .card-container88 {
-         margin-left: 8%;
-          display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        max-width: 800px;
-        
-        border-radius: 10px;
-        background-color: #fff;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 10px 40px 90px ;
-        margin-bottom: 20px; 
-        }
-       
-
-        .jdl1 {
-          font-family: "Poppins", sans-serif;
-          font-weight: 700;
-          font-style: normal;
-          font-size: 16px;
-          color: #5a5858;
-          margin: 1px 1px 1px;
-          margin-top: 100px;
-          margin-left: -15px;
-        }
-
-        .jdll {
-          font-size: 35px;
-          align-items: center;
-          overflow: hidden;
-          white-space: nowrap;
-          position: absolute;
-          left: 38%;
-          bottom: 55%;
-          align-items: center;
-          justify-content: center;
-          color: #2f065e;
-        }
-
-        .jdl {
-          font-size: 35px;
-          align-items: center;
-          overflow: hidden;
-          white-space: nowrap;
-          position: absolute;
-          left: 25%;
-          bottom: 50%;
-          color: #2f065e;
-        }
-
-        .image-frame {
-          position: absolute;
-          top: 10%;
-          left: 29%;
-          justify-content: center;
-        }
-
-        p {
-          font-size: 2em;
-          color: rgb(255, 246, 246);
-          position: absolute;
-          top: 399px;
-          left: 12%;
-          font-family: "Poppins", sans-serif;
-          font-weight: 800;
-          font-style: normal;
-        }
-
-        .typewriter {
-          color: rgb(255, 253, 253);
-          font-size: 3em;
-          display: inline-block;
-          overflow: hidden;
-          white-space: nowrap;
-          border-right: 0.15em solid black;
-          animation: typing 2s steps(30, end),
-            blink-caret 0.7s step-end infinite;
-          position: absolute;
-          top: 420px;
-          left: calc(8% + 100px);
-        }
-
-        .dot {
-          display: block;
-        }
-      }
-
-      /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) { 
-  /* Styles */
-
-  #skills  {
-     padding:10px 0 350px 0 ;
-    
-          
-  }
-
-  #EXPERIENCE {
-    padding:10px 0 300px 0 ;
-   
-  }
- 
-   
-  body {
-    
-    min-width: 600px;
-    background-color: #000000;
-   }
-
- 
-
-  #card {
-          padding: 10px 0 600px 0;
-        
-        }
-       
-  .jdll {
-          font-size: 35px;
-          align-items: center;
-          overflow: hidden;
-          white-space: nowrap;
-          position: absolute;
-          left: 200px;
-         top: 100px;
-          align-items: center;
-          justify-content: center;
-          color: #2f065e;
-        }
-
-        .jdl {
-          font-size: 35px;
-          align-items: center;
-          overflow: hidden;
-          white-space: nowrap;
-          position: absolute;
-          left: 25%;
-         top: 150px;
-          color: #2f065e;
-        }
-
-  .image-frame {
-          position: absolute;
-          top:10%;
-          left: 65%;
-          justify-content: center;
-        }
-
-
-        p {
-         
-          position: absolute;
-          top: 250px;
-          left: 10%;
-          font-family: "Poppins", sans-serif;
-          font-weight: 800;
-          font-style: normal;
-          font-size: 25px;
-          color: #5a5858;
-          
-        }
-
-        .typewriter {
-          color: rgb(255, 253, 253);
-          font-size: 3em;
-          display: inline-block;
-          overflow: hidden;
-          white-space: nowrap;
-          border-right: 0.15em solid black;
-          animation: typing 2s steps(30, end),
-            blink-caret 0.7s step-end infinite;
-          position: absolute;
-          top: 255px;
-          left: calc(9% + 100px);
-        }
-
-        .ex {
-      font-family: "Poppins", sans-serif;
-          font-weight: 800;
-          font-style: normal;
-      color: #ffffff;
-      padding: 10px;
-      margin-left: -250px  ;
-      margin-top: 350px ;
-
-    }
-
-   
+            nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px;
 }
-
-
-
-
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-  /* Styles */
-
-  body {
     
-    min-width: 600px;
-    background-color: #000000;
-   }
 
- 
-
-  #card {
-          padding: 10px 0 600px 0;
-        
-        }
-       
-  .jdll {
-          font-size: 35px;
-          align-items: center;
-          overflow: hidden;
-          white-space: nowrap;
-          position: absolute;
-          left: 200px;
-         top: 100px;
-          align-items: center;
-          justify-content: center;
-          color: #2f065e;
-        }
-
-        .jdl {
-          font-size: 35px;
-          align-items: center;
-          overflow: hidden;
-          white-space: nowrap;
-          position: absolute;
-          left: 25%;
-         top: 150px;
-          color: #2f065e;
-        }
-
-  .image-frame {
-          position: absolute;
-          top:10%;
-          left: 65%;
-          justify-content: center;
-        }
-
-
-        p {
-         
-          position: absolute;
-          top: 250px;
-          left: 10%;
-          font-family: "Poppins", sans-serif;
-          font-weight: 800;
-          font-style: normal;
-          font-size: 25px;
-          color: #5a5858;
-          
-        }
-
-        .typewriter {
-          color: rgb(255, 253, 253);
-          font-size: 3em;
-          display: inline-block;
-          overflow: hidden;
-          white-space: nowrap;
-          border-right: 0.15em solid black;
-          animation: typing 2s steps(30, end),
-            blink-caret 0.7s step-end infinite;
-          position: absolute;
-          top: 255px;
-          left: calc(9% + 100px);
-        }
-
-        .ex {
-      font-family: "Poppins", sans-serif;
-          font-weight: 800;
-          font-style: normal;
-      color: #ffffff;
-      padding: 10px;
-      margin-left: -250px  ;
-      margin-top: 350px ;
-
-    }
-
-}
-
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { 
-  /* Styles */
-
-
-.card-container88 {
-
-  padding: 10px 0 600px 0;
-  
-}
-
-
-  #skills  {
-     padding:10px 0 250px 0 ;
-     margin-left: 200px;
-     margin-top: 80px;
-          
-  }
-
-  #EXPERIENCE {
-    padding:10px 0 250px 0 ;
-    margin-left: 200px;
-  }
- 
-body {
-    
-    min-width: 600px;
-    background-color: #000000;
-   }
-
- 
-
-  #card {
-          padding: 10px 0 800px 0;
-        
-        }
-       
-  .jdll {
-          font-size: 35px;
-          align-items: center;
-          overflow: hidden;
-          white-space: nowrap;
-          position: absolute;
-          left: 380px;
-         top: 100px;
-          align-items: center;
-          justify-content: center;
-          color: #2f065e;
-        }
-
-        .jdl {
-          font-size: 35px;
-          align-items: center;
-          overflow: hidden;
-          white-space: nowrap;
-          position: absolute;
-          left: 25%;
-         top: 150px;
-          color: #2f065e;
-        }
-
-  .image-frame {
-          position: absolute;
-          top:10%;
-          left: 55%;
-          justify-content: center;
-        }
-
-
-        p {
-         
-          position: absolute;
-          top: 250px;
-          left: 10%;
-          font-family: "Poppins", sans-serif;
-          font-weight: 800;
-          font-style: normal;
-          font-size: 30px;
-          color: #5a5858;
-          
-        }
-
-        .typewriter {
-          color: rgb(255, 253, 253);
-          font-size: 3em;
-          display: inline-block;
-          overflow: hidden;
-          white-space: nowrap;
-          border-right: 0.15em solid black;
-          animation: typing 2s steps(30, end),
-            blink-caret 0.7s step-end infinite;
-          position: absolute;
-          top: 270px;
-          left: calc(9% + 100px);
-        }
-
-        .ex {
-      font-family: "Poppins", sans-serif;
-          font-weight: 800;
-          font-style: normal;
-      color: #ffffff;
-      padding: 10px;
-      margin-left: -250px  ;
-      margin-top: 350px ;
-
-    }
-
-
-   
-
-}
-
-
-      @keyframes typing {
-        from {
-          width: 0;
-        }
-        to {
-          width: 60%;
-        }
-      }
-
-      @keyframes blink-caret {
-        from,
-        to {
-          border-color: transparent;
-        }
-        50% {
-          border-color: black;
-        }
-      }
- 
-
-      .card-container88 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        max-width: 800px;
-        
-        border-radius: 30px;
-        background-color: #000000;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 60px 50px 90px ;
-        margin-bottom: 20px;
-      
-      }
-      .logos {
-        display: flex;
-        justify-content: center;
-     
-        
-        flex-wrap: wrap;
-      }
-      .logos img {
-        width: 100px;
-        height: 100px;
-        margin: 5px;
-        border-radius: 60%;
-        background-color: #000000;
-      }
-      .dns{
-        font-family: "Poppins", sans-serif;
-          font-weight: 800;
-          font-style: normal;
-        color: #fdf6f6;
-      }
-
-      cardqq{
-        border-radius: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        max-width: 800px;
-        border: 1px solid #cecece;
-        border-radius: 10px;
-        background-color: #000000;
-        box-shadow: 0 4px 8px rgba(53, 53, 53, 0.1);
-        padding: 10px 10px ;
-        margin-bottom: 20px; 
-      }
-
-
-
-      /*  timelane */
-
-      #EXPERIENCE {
-        margin-top: -50px;
-      }
-
-      @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
-    =============================================================================================
-    
-    
-    
-    .design-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background-color: #1f1f1f;
-      min-height: 100vh;
-      padding: 100px 0;
-      font-family: Jost;
-    }
-
-    .design {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .timeline {
-      width: 80%;
-      height: auto;
-      max-width: 800px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .timeline-content {
-      padding: 20px;
-      background: #000000;
-      -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-      box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-      border-radius: 5px;
-      color: white;
-      padding: 1.75rem;
-      transition: 0.4s ease;
-      overflow-wrap: break-word !important;
-      margin: 1rem;
-      margin-bottom: 20px;
-      border-radius: 6px;
-    }
-
-    .timeline-component {
-      margin: 0px 20px 20px 20px;
-    }
-
-     .card-containermm {
-      display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 80%;
-        max-width: 800px;
-        
-        border-radius: 10px;
-        background-color: #000000;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 10px 40px 90px ;
-        margin-bottom: 20px;
-     }
-
-    @media screen and (min-width: 768px) {
-      .timeline {
-        display: grid;
-        grid-template-columns: 1fr 3px 1fr;
-      }
-      .timeline-middle {
-        position: relative;
-        background-image: linear-gradient(45deg, #af02ff, #2e00fd, #4c00ff);
-        width: 3px;
-        height: 100%;
-      }
-      .main-middle {
-        opacity: 0;
-      }
-      .timeline-circle {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        background-image: linear-gradient(45deg, #4e21f2, #003bfd, #2600ff);
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-      }
-    }
-
-    .ex {
-      font-family: "Poppins", sans-serif;
-          font-weight: 800;
-          font-style: normal;
-      color: #ffffff;
-      padding: 30px;
-      margin-left: 250  ;
-      margin-top: 80px ;
-
-    }
-      
-   
- /* foother */
-      footer {
-        
-        color: #f3e9e9;
-        background-color: #000000;
-        margin-top: 50px;
-        padding: 12px;
-        justify-content: center;
-        text-align: center;
-       
-        border-radius: 5px;
-      }
-
-      .icon {
-      display: flex;
-      gap: 15px;
-    }
-
-    .icon a {
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      transition: color 0.3s, transform 0.3s;
-      display: flex;
-      align-items: center;
-      font-size: 16px;
-    }
-
-    .icon a i {
-      margin-right: 8px;
-    }
-
-    .icon a:hover {
-      color: #f39c12;
-      transform: scale(1.1);
-    }
-
-    .icon a:hover i {
-      color: #f39c12;
-    }
- /* and foother */
-
-      .card-container {
-    background-size: cover; /* Membuat gambar menutupi seluruh kontainer */
-    background-repeat: no-repeat; /* Mencegah pengulangan gambar */
-    background-position: center; /* Memposisikan gambar di tengah */
-  }
-
-      @media (min-width: 768px) and (max-width: 991.98px) { 
-  .card-container88 {
-    width: 90%;
-  }
-
- 
-}
-
-
-      @media (min-width: 768px) and (max-width: 991.98px) { 
-  .card-containermm {
-    width: 90%;
-  }
-}
-
-  /* Media query untuk perangkat besar */
-  @media (min-width: 1200px) {
-      p{
-        font-size: calc(18px + 1vw); /* Sesuaikan ukuran teks untuk perangkat besar */
-      }
-    }
-
-     /* card cece */
-     .oo {
-      color: white;
-      
-     }
-     #cc {
-      
-        background-color:black;
+        nav ul {
+            list-style-type: none;
             display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            padding: 8px 16px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        .header {
+            position: relative;
+            left: 50px;
+            color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+        }
+
+        /* Burger menu */
+        .burger {
+            display: none;
             flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        /* Hide the nav menu on small screens */
+        #nav-links {
+            display: flex;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 575.98px) {
+
+
+         
+
+          .card-containermm {
+            position: relative;
+            top: -500px;
+            margin-left: -250px;
+            
+          }
+
+   
+        
+            .header {
+                position: relative;
+                left: 10px;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            #nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+                width: 100%;
+            }
+
+            #nav-links.show {
+                display: flex;
+            }
+
+            nav ul {
+                flex-direction: column;
+                width: 100%;
+                padding: 1rem 0;
+            }
+
+            nav ul li a {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+
+
+
+
+      
+        /* Additional styles for demo */
+        .container {
+            position: relative;
+            margin: 90px;
+            text-align: center;
+        }
+
+       
+
+        #about {
+            position: relative;
+            top: 300px;
+        }
+
+        .about-section {
+            display: flex;
             align-items: center;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
             padding: 50px;
-        }
-        .card-containeraa {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 10px;
-            width: 100%;
-        }
-        .card_bb {
-          background-color: #021526;
-            border: 1px solid #757575;
-            border-radius: 8px;
-            width: 100%;
-            max-width: 300px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            margin: 10px auto;
-            transition: transform 0.3s;
-        }
-        .card_bb img {
-            width: 100%;
+            box-sizing: border-box;
+            width: 100vw;
             height: auto;
         }
-        .card_bb
-        .descriptionzz {
-          color: white;
-            padding: 15px;
-            font-family: Arial, sans-serif;
+
+        .about-section img {
+            width: 50%;
+            height: auto;
+            object-fit: cover;
         }
-        .card_bb:hover {
-            transform: scale(1.05);
+
+        .about-content {
+            padding: 20px;
+            width: 50%;
+            box-sizing: border-box;
         }
-        @media (min-width: 600px) {
-           #cc {
-                display: flex;
-                justify-content: center;
+
+        .about-content h3 {
+            margin: 0 0 15px;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .about-content p {
+            margin: 0;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                padding: 20px;
             }
-            .card-containeraa {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+
+            .about-section img {
+                width: 100%;
+                height: auto;
             }
-            .card_bb {
-                max-width: calc(50% - 20px); /* Two cards per row */
+
+            .about-content {
+                width: 100%;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            .about-content h3 {
+                font-size: 28px;
+            }
+
+            .about-content p {
+                font-size: 16px;
             }
         }
-        @media (min-width: 900px) {
-            .card_bb {
-                max-width: calc(33.33% - 20px); /* Three cards per row */
-            }
-        }
 
-        .blurfoto {
-          filter: blur(2px);
-        }
-    
+          /* Track bar */
 
-         /* nexte */
-
-         #tombol {
-          margin-top: -30%;
-          margin-left: 15%;
-          padding: 50px;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-         }
-
-         .animated-buttonbb {
-         justify-content: center;
-          text-align: center;
-         align-items: center;
-          place-items: center;
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 15px 30px;
-            font-size: 16px;
-            text-decoration: none;
-            border-radius: 30px;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .animated-buttonbb::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 300%;
-            height: 300%;
-            background-color: rgba(255, 255, 255, 0.2);
-            transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
-            border-radius: 50%;
-            z-index: 0;
-            transform: translate(-50%, -50%);
-        }
-
-        .animated-buttonbb:hover::before {
-            width: 0;
-            height: 0;
-            top: 50%;
-            left: 50%;
-        }
-
-        .animated-buttonbb:hover {
-            background-color: #2980b9;
-            transform: scale(1.1);
-        }
-
-        .animated-buttonbb span {
-            position: relative;
-            z-index: 1;
-        }
-
-      /* Track bar */
 
       #card-Services {
         position: relative;
-        top:150px ;
+        bottom: -500px;
       }
     .track-bar {
       height: 4px;
@@ -989,7 +229,7 @@ body {
 
     .container99 {
       padding: 90px 0 90px 0;
-      background-color: #000000;
+      background-color: #ffffff;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -1000,7 +240,7 @@ body {
     .service-card {
       display: inline-block;
       width: 300px;
-      background-color: #000000;
+      background-color: #383838;
       border: 2px solid transparent;
       border-radius: 10px;
       padding: 90px 0 60px 0;
@@ -1061,9 +301,8 @@ body {
     }
 
     .section-title {
-      margin-top:50px;
       text-align: center;
-      color: #ffffff;
+      color: #000000;
       font-size: 32px;
       font-weight: bold;
       margin-bottom: 10px;
@@ -1073,90 +312,358 @@ body {
       color: #1e90ff;
     }
 
-    @media (max-width: 768px) {
 
-      #skills  {
-        position: relative;
-        top: 120px;
-        left: -50px;
+    /* skils*/
+      
+    #skilss {
+    position: relative;
+    top: 700px;
+    }
+
+    h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .skill-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+        .skill-item p {
+            font-size: 16px;
+            color: #555;
+        }
+
+
+        /*  timelane */
+
+
+      #EXPERIENCE {
+        background-color: #ffffff;
+        margin-top: -50px;
       }
-      .container99 {
+
+      @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
+    =============================================================================================
+    
+    
+    
+    .design-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #000000;
+      min-height: 100vh;
+      padding: 100px 0;
+      font-family: Jost;
+    }
+
+    .design {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .timeline {
+      width: 80%;
+      height: auto;
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .timeline-content {
+      padding: 20px;
+      background: #000000;
+      -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+      box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+      border-radius: 5px;
+      color: white;
+      padding: 1.75rem;
+      transition: 0.4s ease;
+      overflow-wrap: break-word !important;
+      margin: 1rem;
+      margin-bottom: 20px;
+      border-radius: 6px;
+    }
+
+    .timeline-component {
+      margin: 0px 20px 20px 20px;
+    }
+
+     .card-containermm {
+      position: relative;
+      left: 250px;
+      top: 850px;
+      display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 50px 0;
-        gap: 30px; /* Tambahkan gap antara card */
-      }
+        width: 80%;
+        max-width: 800px;
+        border-radius: 10px;
+        background-color: #ffffff;
+        padding: 10px 40px 90px ;
+        margin-bottom: 20px;
+     }
 
-      .service-card {
-        width: 90%;
-        padding: 60px 0;
-        margin: 20px 0;
-      }
+    @media screen and (min-width: 768px) {
 
-      .service-icon {
-        font-size: 50px;
-        margin-bottom: 15px;
+      .ex {
+         margin-left: 100%;
+  
       }
-
-      .service-title {
-        font-size: 26px;
+      .timeline {
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr;
       }
-
-      .service-description {
-        font-size: 18px;
+      .timeline-middle {
+        position: relative;
+        background-image: linear-gradient(45deg, #af02ff, #2e00fd, #4c00ff);
+        width: 3px;
+        height: 100%;
+      }
+      .main-middle {
+        opacity: 0;
+      }
+      .timeline-circle {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-image: linear-gradient(45deg, #4e21f2, #003bfd, #2600ff);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
       }
     }
 
+    .ex {
+      font-family: "Poppins", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+      color: #000000;
+      padding: 30px;
+      margin-left: -150px  ;
+      margin-top: 80px ;
+
+    }
+
+    /* Container untuk keseluruhan section */
+#cc {
+  margin-top: 900px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Heading style */
+#cc h1.oo {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container untuk kartu */
+.card-containeraa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Style untuk setiap kartu */
+.card_bb {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style untuk gambar di dalam kartu */
+.card_bb img {
+    width: 100%;
+    height: auto;
+}
+
+/* Efek blur untuk gambar dengan kelas khusus */
+.card_bb .blurfoto {
+    filter: blur(2px);
+    transition: filter 0.3s;
+}
+
+/* Deskripsi kartu */
+.descriptionzz {
+    padding: 15px;
+}
+
+/* Judul untuk setiap proyek di kartu */
+.descriptionzz h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Deskripsi teks */
+.descriptionzz vv {
+    display: block;
+    font-size: 16px;
+    color: #777;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hover efek untuk kartu */
+.card_bb:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card_bb:hover .blurfoto {
+    filter: none;
+}
+
+/* Responsive design untuk layar kecil */
+@media (max-width: 575.98px) {
+    .card-containeraa {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card_bb {
+        width: 100%;
+    }
+}
+
+
+     
+   /* FOOTER*/
+
+   footer {
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            top: 450px;
+        } 
+
+   .sosmed {
+    text-align: center;
+    padding: 20px;
+}
+
+.sosmed .icon {
+    display: inline-block;
+}
+
+.sosmed .icon a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.sosmed .icon a i {
+    margin-right: 8px;
+}
+
+.sosmed .icon a:hover {
+    color: #3cff00; /* Adjust this color as needed */
+    transform: translateY(-5px);
+}
+
+/* Optional media query for responsiveness */
+@media (max-width: 575.98px) {
+    .sosmed .icon a {
+        font-size: 16px;
+    }
+}
 
     </style>
-  </head>
-  <body>
-    <section id="about">
-      <nav>
-        <div class="menu-toggle" id="menu-toggle">
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
-          <div class="hamburger"></div>
+</head>
+<body>
+
+<!-- Navbar with animation -->
+<nav
+data-aos="fade-down"
+data-aos-easing="linear"
+data-aos-duration="1500">
+    <div class="header">portfolio</div>
+    <!-- Burger menu button -->
+    <div class="burger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <!-- Navbar items -->
+    <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutt">About</a></li>
+        <li><a href="#skillss">portfolio</a></li>
+        <li><a href="#projeeek">projek</a></li>
+    </ul>
+</nav>
+
+  <!-- Main content -->
+    <div class="container" data-aos="fade-up" data-aos-duration="3000">
+      <h1> i'm farhan alfatih</h1>
+      <p>halo, nama saya farhan <br/>saya tertari di bidang web developer dan  ui ux</p>
+
+    </div>
+
+   
+
+
+<!-- About section -->
+<section id="aboutt" style="position: relative; top: 250px;"></section>
+
+<section id="about" data-aos="fade-up" data-aos-duration="2000">
+
+    <div class="about-section">
+        <img src="farhan54.png" alt="About Image">
+        <div class="about-content"> 
+           <h3>About Us</h3>
+            <p>
+              I am a motivated and versatile individual, who is motivated
+              and versatile. Always eager to face new challenges by studying. I am
+              dedicated to delivering quality results and a growth mindset. I am
+              ready to make a meaningful contribution.
+            </p>
         </div>
-        <ul class="menu" id="menu">
-          <li><a href="#about" >About</a></li>
-          <li><a href="#skills">Portfolio</a></li>
-          <li><a href="#EXPERIENCE">Experience</a></li>
-          <li><a href="blogg.html">My blog</a></li>
-          <li><a href="#cc">Projek</a></li>
-          
-        </ul>
-      </nav>
-    </section>
-      <div class="card-container">
-        <div id="card">
-          <div class="image-frame" id="imgf">
-            <img src="farhan54.png" alt="foto orang ganteng" />
-          </div>
-          <h1 class="jdll">Hai' I am</h1>
-          <h1 class="jdl">Farhan Al Fatih</h1>
-          <p>I'am</p>
-          <hp class="typewriter">Programmer</hp>
-          <p class="jdl1">
-            <br />I am a motivated and versatile individual, who is motivated
-            and versatile. Always eager to face new challenges by studying. I am
-            dedicated to delivering quality results and a growth mindset. I am
-            ready to make a meaningful contribution.
-          </p>
-        </div>
-      </div>
-    </section>
+    </div>
+</section>
 
-    <section id="card-Services">
-    <div class="section-title">My Services</div>
 
-  
+<section id="card-Services">
+    <div class="section-title" data-aos="fade-right"  style="position: relative; top: 50px;">My Services</div>
 
+   
     <div class="container99">
 
-      
-
-      <div class="service-card">
+      <div class="service-card" data-aos="zoom-in-up"  data-aos-duration="1500">
         <div class="service-icon">
           <i class="fas fa-paint-brush"></i>
         </div>
@@ -1167,7 +674,7 @@ body {
         <a href="https://www.instagram.com/kodee_kuu?igsh=MXUyNDhha2E2YWgxbw=="><button class="buttonn">contact me</button></a>
       </div>
   
-      <div class="service-card">
+      <div class="service-card" data-aos="zoom-in-up"  data-aos-duration="2000">
         <div class="service-icon">
           <i class="fas fa-paint-brush"></i>
         </div>
@@ -1178,7 +685,7 @@ body {
         <a href="https://www.instagram.com/kodee_kuu?igsh=MXUyNDhha2E2YWgxbw=="><button class="buttonn">contact me</button></a>
       </div>
   
-      <div class="service-card">
+      <div class="service-card" data-aos="zoom-in-up"  data-aos-duration="3000">
         <div class="service-icon">
           <i class="fas fa-paint-brush"></i>
         </div>
@@ -1189,264 +696,184 @@ body {
         <a href="https://www.instagram.com/kodee_kuu?igsh=MXUyNDhha2E2YWgxbw=="><button class="buttonn">contact me</button></a>
       </div>
     </div>
-
   </section>
-  
-    <section id="skills">
 
-      <div class="card-container88">
-        <cardqq>
-        <h2 class="dns"> skills </h2>
-        <hj class="dns"> I taught myself by watching tutorials on YouTube </hj>
-      </cardqq>
-        <div class="logos">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-            alt="HTML5"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-            alt="CSS3"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-            alt="JavaScript"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
-            alt="PHP"
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg"
-            alt="MySQL"
-          />
+      <section id="skillss" style="position: relative; top: 500px;"></section>
+
+  <section id="skilss" data-aos="zoom-in-up" >
+  <h2 style="text-align: center;">Skills</h2>
+  <p style=" text-align: center; margin: 20px;"> I taught myself by watching tutorials on YouTube  </p>
+    
+  <div class="skills-container">
+      <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML">
+          <p>HTML</p>
+      </div>
+      <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS">
+          <p>CSS</p>
+      </div>
+      <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript">
+          <p>JavaScript</p>
+      </div>
+      <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP">
+          <p>PHP</p>
+      </div>
+      <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" alt="MySQL">
+          <p>MySQL</p>
+      </div>
+      <div class="skill-item">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap">
+          <p>Bootstrap</p>
+      </div>
+  </div>
+</section>
+
+
+<section id="EXPERIENCE">
+  <div class="card-containermm"  data-aos="zoom-in-right"   data-aos-duration="1500">
+
+    <h1 class="ex">EXPERIENCE</h1>
+
+    <!--This is the main container that contains the whole timeline.-->
+    <section class="design-section">
+      <div class="timeline">
+        <!--Well, The reason for this div is to fill space. 
+  This space is technically used for keeping dates, 
+  but I didn't find the need for dates. However, I'll provide 
+  you the styling for dates, so that you can use it if you 
+  wanted to.-->
+        <div class="timeline-empty"></div>
+
+        <!--This is the class where the timeline graphics are 
+  housed in. Note that we have timeline-circle 
+  here for that pointer in timeline.-->
+
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+        </div>
+
+        <div class="timeline-component timeline-content">
+          <ph class="tahun">2017-2023</ph>
+          <h4>SD muhammadiyah 1 lampung</h4>
+          
+        </div>
+        <div class="timeline-component timeline-content">
+          <ph class="tahun">2023-2025</ph>
+          <h4>SMP N20 bandar lampung</h4>
+         
+        </div>
+
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+        </div>
+
+        <div class="timeline-empty"></div>
+
+        <div class="timeline-empty"></div>
+
+        <div class="timeline-middle">
+          <div class="timeline-circle"></div>
+        </div>
+
+        <div class="timeline-component timeline-content">
+          <ph class="tahun">2023</ph>
+          <h4>tahfidz  qur'an juz 30</h4>
+         
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="EXPERIENCE">
-    <div class="card-containermm">
-      <h1 class="ex">EXPERIENCE</h1>
+  <section id="projeeek" style="position: relative; top: 800px;"></section>
 
-      <!--This is the main container that contains the whole timeline.-->
-      <section class="design-section">
-        <div class="timeline">
-          <!--Well, The reason for this div is to fill space. 
-    This space is technically used for keeping dates, 
-    but I didn't find the need for dates. However, I'll provide 
-    you the styling for dates, so that you can use it if you 
-    wanted to.-->
-          <div class="timeline-empty"></div>
-
-          <!--This is the class where the timeline graphics are 
-    housed in. Note that we have timeline-circle 
-    here for that pointer in timeline.-->
-
-          <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-          </div>
-
-          <div class="timeline-component timeline-content">
-            <ph class="tahun">2017-2023</ph>
-            <h4>SD muhammadiyah 1 lampung</h4>
-            
-          </div>
-          <div class="timeline-component timeline-content">
-            <ph class="tahun">2023-2025</ph>
-            <h4>SMP N20 bandar lampung</h4>
-           
-          </div>
-
-          <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-          </div>
-
-          <div class="timeline-empty"></div>
-
-          <div class="timeline-empty"></div>
-
-          <div class="timeline-middle">
-            <div class="timeline-circle"></div>
-          </div>
-
-          <div class="timeline-component timeline-content">
-            <ph class="tahun">2023</ph>
-            <h4>tahfidz  qur'an juz 30</h4>
-           
-          </div>
-        </div>
-      </div>
-    </section>
-
+  <section id="cc">
+    <h1 class="oo"> PROJEK</h1>
    
+  <div class="card-containeraa">
+      <div class="card_bb" data-aos="zoom-in-up"  data-aos-duration="1000">
 
-     <section id="cc">
-      <h1 class="oo"> PROJEK</h1>
-     
-    <div class="card-containeraa">
-        <div class="card_bb">
-            <img src="kkk.jpg" alt="Image">
-            <div class="descriptionzz">
-                <h2> web.portfolio   </h2>
-                <vv>di buat dengan html.css dan JavaScript</vv>
-               
-            </div>
-        </div>
-        <div class="card_bb">
-            <img src="prrrr.png" alt="Image">
-            <div class="descriptionzz">
-                <h2> web.shop</h2>
-                <vv>di buat dengan html.css dan JavaScript</vv>
-            </div>
-        </div>
-        <!-- Add more cards as needed -->
-        <div class="card_bb">
-          <img src="Scre.png" alt="Image">
+          <img src="kkk.jpg" alt="Image">
           <div class="descriptionzz">
-              <h2> web.portfolio</h2>
+              <h2> web.portfolio   </h2>
+              <vv>di buat dengan html.css dan JavaScript</vv>
+             
+          </div>
+      </div>
+      <div class="card_bb"  data-aos="zoom-in-up"  data-aos-duration="1000">
+          <img src="prrrr.png" alt="Image">
+          <div class="descriptionzz">
+              <h2> web.shop</h2>
               <vv>di buat dengan html.css dan JavaScript</vv>
           </div>
       </div>
-
-      <div class="card_bb">
-        <img src="bbv.jpg" alt="Image" class="blurfoto">
+      <!-- Add more cards as needed -->
+      <div class="card_bb"  data-aos="zoom-in-up"  data-aos-duration="2000">
+        <img src="Scre.png" alt="Image">
         <div class="descriptionzz">
-            <h2> web.girlfriend day </h2>
+            <h2> web.portfolio</h2>
             <vv>di buat dengan html.css dan JavaScript</vv>
         </div>
     </div>
 
-    <div class="card_bb">
-      <img src="kasir (2).png" alt="Image" class="imege">
+    <div class="card_bb"  data-aos="zoom-in-up"  data-aos-duration="2000">
+      <img src="bbv.jpg" alt="Image" class="blurfoto">
       <div class="descriptionzz">
-          <h2> web.kasir </h2>
-          <vv>di buat dengan bootstrap5.html.css.php dan JavaScript</vv>
-      </div>
-  </div>
-
-
-    <div class="card_bb">
-      <img src="Screenshot_1.png" alt="Image">
-      <div class="descriptionzz">
-          <h2> web.login.register</h2>
+          <h2> web.girlfriend day </h2>
           <vv>di buat dengan html.css dan JavaScript</vv>
       </div>
   </div>
 
+  <div class="card_bb"  data-aos="zoom-in-up"  data-aos-duration="3000">
+    <img src="kasir (2).png" alt="Image" class="imege">
+    <div class="descriptionzz">
+        <h2> web.kasir </h2>
+        <vv>di buat dengan bootstrap5.html.css.php dan JavaScript</vv>
     </div>
-  </section>
+</div>
 
 
+  <div class="card_bb"  data-aos="zoom-in-up"  data-aos-duration="3000">
+    <img src="Screenshot_1.png" alt="Image">
+    <div class="descriptionzz">
+        <h2> web.login.register</h2>
+        <vv>di buat dengan html.css dan JavaScript</vv>
+    </div>
+</div>
+
+  </div>
+</section>
  
 
-    <footer>
-      &copy; 2024  by farhanalfatih  
+<!-- Footer -->
 
-      <div class="sosmed" >
-        <div class="icon">
-           <a href="https://github.com/farhanalfatih"><i class="fa-brands fa-github"></i>github</a>
-           <a href="https://www.instagram.com/kodee_kuu?igsh=MXUyNDhha2E2YWgxbw=="><i class="fa-brands fa-instagram"></i>instagram</a>
-            <a href="https://www.linkedin.com/in/farhan-alfatih" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-           <a href=" https://www.tiktok.com/@alnassrsuiii?_t=8oLIpVllTcK&_r=1"><i class="fa-brands fa-tiktok"></i>tiktok</a>
-          
-        </div>
-         </div>
-    </footer>
-    <script> 
+<footer>
+  &copy; 2024  by farhanalfatih  
 
-      document
-        .getElementById("menu-toggle")
-        .addEventListener("click", function () {
-          var menu = document.getElementById("menu");
-          menu.classList.toggle("active");
-        });
-    </script>
-    <script>
-      document
-        .getElementById("menu-toggle")
-        .addEventListener("click", function () {
-          var menu = document.getElementById("menu");
-          menu.classList.toggle("active");
-        });
+  <div class="sosmed">
+    <div class="icon">
+       <a  href="https://github.com/farhanalfatih"><i class="fa-brands fa-github"></i>github</a>
+       <a href="https://www.instagram.com/kodee_kuu?igsh=MXUyNDhha2E2YWgxbw=="><i class="fa-brands fa-instagram"></i>instagram</a>
+        <a href="https://www.linkedin.com/in/farhan-alfatih" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+       <a href=" https://www.tiktok.com/@alnassrsuiii?_t=8oLIpVllTcK&_r=1"><i class="fa-brands fa-tiktok"></i>tiktok</a>
+      
+    </div>
+     </div>
+</footer>
 
-      document.addEventListener("DOMContentLoaded", () => {
-        const card = document.getElementById("card");
-        const numDots = 50;
-        const dots = [];
-
-        for (let i = 0; i < numDots; i++) { 
-          const dot = document.createElement("div");
-          dot.classList.add("dot");
-          dot.style.width = ${Math.random() * 5 + 2}px;
-          dot.style.height = dot.style.width;
-          dot.style.left = ${Math.random() * card.offsetWidth}px;
-          dot.style.top = ${Math.random() * card.offsetHeight}px;
-          dot.dx = Math.random() * 2 - 1;
-          dot.dy = Math.random() * 2 - 1;
-          card.appendChild(dot);
-          dots.push(dot);
-        }
-
-        function animate() {
-          dots.forEach((dot) => {
-            let x = parseFloat(dot.style.left);
-            let y = parseFloat(dot.style.top);
-
-            x += dot.dx;
-            y += dot.dy;
-
-            if (x < 0 || x > card.offsetWidth) dot.dx *= -1;
-            if (y < 0 || y > card.offsetHeight) dot.dy *= -1;
-
-            dot.style.left = ${x}px;
-            dot.style.top = ${y}px;
-          });
-          requestAnimationFrame(animate);
-        }
-
-        animate();
-      });
-    </script>
 <script>
-
-document.addEventListener("DOMContentLoaded"), () => {
-        const card = document.getElementById("card");
-        const numDots = 50;
-        const dots = [];
-
-        for (let i = 0; i < numDots; i++) { 
-          const dot = document.createElement("div");
-          dot.classList.add("dot");
-          dot.style.width = ${Math.random() * 5 + 2}px;
-          dot.style.height = dot.style.width;
-          dot.style.left = ${Math.random() * card.offsetWidth}px;
-          dot.style.top = ${Math.random() * card.offsetHeight}px;
-          dot.dx = Math.random() * 2 - 1;
-          dot.dy = Math.random() * 2 - 1;
-          card.appendChild(dot);
-          dots.push(dot);
-        }
-
-        function animate() {
-          dots.forEach((dot) => {
-            let x = parseFloat(dot.style.left);
-            let y = parseFloat(dot.style.top);
-
-            x += dot.dx;
-            y += dot.dy;
-
-            if (x < 0 || x > card.offsetWidth) dot.dx *= -1;
-            if (y < 0 || y > card.offsetHeight) dot.dy *= -1;
-
-            dot.style.left = ${x}px;
-            dot.style.top = ${y}px;
-          });
-          requestAnimationFrame(animate);
-        }
-
-        animate();
-      };
+    // Toggle the burger menu
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('show');
+    }
 </script>
-
-  </body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
 </html>
