@@ -627,6 +627,25 @@
     transform: translateY(-3px);
 }
 
+
+
+#text {
+            font-size: 2rem;
+            color: #333;
+            animation: moveUpDown 2s ease-in-out infinite;
+        }
+
+        @keyframes moveUpDown {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        
+
     </style>
 </head>
 <body>
@@ -654,8 +673,8 @@ data-aos-duration="1500">
 </nav>
 
   <!-- Main content -->
-    <div class="container" data-aos="fade-up" data-aos-duration="3000">
-      <h1> i'm farhan alfatih</h1>
+    <div class="container"  data-aos="fade-up" data-aos-duration="3000">
+      <h1 id="text"> i'm farhan alfatih</h1>
       <p>hello, my name is farhan <br>
 I am interested in web development and UI UX</p>
 
