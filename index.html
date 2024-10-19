@@ -142,11 +142,22 @@
       
         /* Additional styles for demo */
         .container {
-            position: relative;
-            margin: 90px;
-            text-align: center;
-        }
+  position: relative;
+  margin: 90px;
+  text-align: center;
+  z-index: 2; /* Konten tetap di depan gambar */
+}
 
+.background-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Memusatkan gambar */
+  width: 400px; /* Sesuaikan ukuran gambar bulan */
+  height: auto; /* Menjaga proporsi gambar */
+  z-index: 1;
+  opacity: 0.5; /* Membuat gambar semi-transparan */
+}
        
 
         #about {
@@ -667,6 +678,7 @@
 }
 
 section {
+
     padding: 100px 20px;
     min-height: 100vh;
 }
@@ -699,15 +711,15 @@ data-aos-duration="1500">
     </ul>
 </nav>
 
-  <!-- Main content -->
-    <div class="container"  data-aos="fade-up" data-aos-duration="3000">
-      <h1 id="text"> i'm farhan alfatih</h1>
-      <p>hello, my name is farhan <br>
-I am interested in web development and UI UX</p>
-
+    <!-- Main content -->
+<div class="container" data-aos="fade-up" data-aos-duration="3000">
+  <h1 id="text">I'm Farhan Alfatih</h1>
+  <p>Hello, my name is Farhan <br> I am interested in web development and UI/UX</p>
   <!--  <a href="" download="cv frahan" class="download-btncv">Download CV</a> -->
+</div>
 
-    </div>
+<img class="background-image" src="https://tse4.mm.bing.net/th?id=OIP.pqdcvbuJIFMSoOYk4WpPpQHaHT&pid=Api&P=0&h=220" alt="">
+
 
     <!-- end home -->
 
