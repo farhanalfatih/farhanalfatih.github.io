@@ -1,0 +1,231 @@
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+#home {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+body {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 90px;
+}
+
+.certifikat {
+    position: relative;
+    top: 500px;
+}
+
+.about-me {
+    position: relative;
+    top: 500px;
+}
+
+/* navbar */
+.navbar {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.burger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    margin-right: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    gap: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    position: relative;
+    left: -50px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.brand-name {
+    font-size: 1.2rem;
+    /* Ukuran font */
+    font-weight: bolder;
+    /* Ketebalan font */
+    color: white;
+    /* Warna font */
+    margin-right: auto;
+    /* Memastikan nama brand berada di sebelah kiri */
+}
+
+
+/* Mobile Styles */
+@media (max-width: 575.98px) {
+
+    section {
+        padding: 100px 20px;
+        min-height: 100vh;
+    }
+
+    body {
+        font-size: 15px;
+        /* Sedikit lebih besar dari ponsel */
+        padding: 20px;
+        /* Ruang tambahan di sekitar konten */
+    }
+
+    .brand-name {
+        position: relative;
+        left: -10px;
+    }
+
+
+    /* responsiv navbar */
+
+    .burger {
+        position: relative;
+        left: 400px;
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        transform: translateY(-200%);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+    }
+
+}
+
+
+.footer {
+    background-color: #0b1f3a;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer .column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer .column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer .column p,
+.footer .column a {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.footer .column a:hover {
+    color: #007bff;
+}
+
+.footer .social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer .social a {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.footer .social a:hover {
+    background-color: #0056b3;
+}
+
+.footer .copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #bbb;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
+
+@media (max-width: 575.98px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+/* responsiv */
+
+@media (max-width: 768px) {
+    .card-container {
+        display: grid;
+    }
+
+    .carousel {
+        margin: 0;
+    }
+
+}

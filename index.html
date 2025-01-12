@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- emailjs -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- fonts popits -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&amp;display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Ahamd farhan al fatih</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <!-- navbar  -->
+    <nav class="navbar" data-aos="fade-down" data-aos-duration="2000">
+        <div class="burger" onclick="toggleMenu()">&#9776;</div>
+        <div class="brand-name">Portofolio</div> <!--  -->
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#certifikat">Certificate</a></li>
+            <li><a href="#projek">Projek</a></li>
+
+        </ul>
+
+    </nav>
+    <section id="home">
+        <div class="text-center relative" style="position: relative; top: -20px;">
+            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <img src="./img/foto.jpg" alt="foto farhan" class="rounded-lg w-24 h-24 object-cover">
+            </div>
+            <div class="text-black font-bold text-6xl leading-tight mt-8 text-gray-700">
+                <p class="text">AHMAD</p>
+                <p class="text">FARHAN</p>
+                <p class="text">ALFATIH</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me py-8 px-4" id="about">
+        <h1 class="text-2xl font-bold mb-6">ABOUT ME</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Bagian Teks -->
+            <div>
+                <p class="mb-4 text-gray-700">
+                    I am a motivated, versatile individual who is always eager to face new challenges with an
+                    unwavering learning spirit. I am highly dedicated to delivering quality results through hard work
+                    and a
+                    strong commitment to self-development. With good adaptability, I am ready to face various
+                    situations,
+                    work independently or in a team, and continue to grow along with changes and developments in the
+                    surrounding environment. I believe that with an open mindset and continuous growth, I can make a
+                    meaningful contribution and help achieve common goals.
+                </p>
+            </div>
+            <div class="flex items-center justify-center text-3xl font-bold">
+                <div class="space-y-6">
+                    <div>
+                        <h2 class="text-lg font-bold mb-2">
+                            Frontend Tools
+                        </h2>
+                        <div class="flex space-x-4">
+                            <img alt="React logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" />
+                            <img alt="Tailwind CSS logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" />
+                            <img alt="" class="w-10 h-10" src="https://cdn.worldvectorlogo.com/logos/html-1.svg" />
+                            <img alt="CSS3 logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" />
+                            <img alt="JavaScript logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" />
+                            <img alt="Next.js logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" />
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-bold mb-2">
+                            Backend Tools
+                        </h2>
+                        <div class="flex space-x-4">
+                            <img alt="Node.js logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" />
+                            <img alt="php logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" />
+                            <!-- <img alt="Express.js logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" /> -->
+                            <!-- <img alt="GraphQL logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/1/17/GraphQL_Logo.svg" /> -->
+                            <!-- <img alt="MongoDB logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/93/MongoDB_Logo.svg" /> -->
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-bold mb-2">
+                            Design Tools
+                        </h2>
+                        <div class="flex space-x-4">
+                            <img alt="Figma logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" />
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="text-lg font-bold mb-2">
+                            Development Tools
+                        </h2>
+                        <div class="flex space-x-4">
+                            <img alt="Visual Studio Code logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" />
+                            <img alt="Git logo" class="w-10 h-10"
+                                src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section class="certifikat px-4 py-8 flex items-center justify-center min-h-screen " id="certifikat">
+        <div class="text-center">
+            <h1 class="text-2xl text-center mb-6">CERTIFIKAT</h1>
+            <div class="flex flex-wrap sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+                <div class="w-full max-w-sm bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 ">
+                    <img src="./img/sertifikat/dicoding.jpg" alt="Certificate Preview" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class=" font-bold text-gray-800 mb-2">Certificate, JavaScript dicoding </h2>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-sm bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                    <img src="./img/sertifikat/codepotitan.jpg" alt="Certificate Preview"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class=" font-bold text-gray-800 mb-2">Certificate, Codepolitan</h2>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-sm bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200">
+                    <img src="./img/sertifikat/sertifikat-front-end.jpg" alt="Certificate Preview"
+                        class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h2 class=" font-bold text-gray-800 mb-2">Certificate, FE Dicoding</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section></section>
+
+    <section>
+
+        <div class="flex items-center justify-center mb-6" id="projek">
+            <h1 class="text-2xl mr-2">My projek</h1>
+            <i class="fa-solid fa-rocket text-xl"></i>
+        </div>
+        <p class="items-center justify-center mb-9 flex top-1 ">ini ada lah beberapa projek saya, yang saya banggakan
+        </p>
+
+        <div class="container-projek flex flex-wrap justify-center gap-5 p-5">
+            <!-- Card 1 -->
+            <div
+                class="portfolio-card bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-lg p-4 max-w-sm sm:max-w-xs shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <h3 class="text-lg text-yellow-500 mb-2">new web Portofolio</h3>
+                <div class="flex items-center gap-2 mb-3">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt="HTML Logo">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                        alt="CSS Logo">
+                    <img class="w-8 h-8" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        alt="JavaScript Logo">
+                    <img class="w-8 h-8" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                        alt="Tailwind Logo">
+                </div>
+                <img class="w-full rounded-md mb-3" src="./img/projek/portofollio.png" alt="Gambar Portofolio">
+            </div>
+
+            <!-- Card 2 -->
+            <div
+                class="portfolio-card bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-lg p-4 max-w-sm sm:max-w-xs shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <h3 class="text-lg text-yellow-500 mb-2">book app</h3>
+                <div class="flex items-center gap-2 mb-3">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt="HTML Logo">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                        alt="CSS Logo">
+                    <img class="w-8 h-8" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        alt="JavaScript Logo">
+                </div>
+                <img class="w-full rounded-md mb-3" src="./img/projek/Book-app.jpg" alt="Gambar Portofolio">
+            </div>
+
+            <div
+                class="portfolio-card bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-lg p-4 max-w-sm sm:max-w-xs shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <h3 class="text-lg text-yellow-500 mb-2">E-commerce</h3>
+                <div class="flex items-center gap-2 mb-3">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt="HTML Logo">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                        alt="CSS Logo">
+                    <img class="w-8 h-8" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        alt="JavaScript Logo">
+                </div>
+                <img class="w-full rounded-md mb-3" src="./img/projek/marketplace .jpg" alt="Gambar Portofolio">
+            </div>
+
+            <div
+                class="portfolio-card bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-lg p-4 max-w-sm sm:max-w-xs shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <h3 class="text-lg text-yellow-500 mb-2">sistem kasir sedrhana</h3>
+                <div class="flex items-center gap-2 mb-3">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt="HTML Logo">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                        alt="CSS Logo">
+                    <img class="w-8 h-8" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        alt="JavaScript Logo">
+                    <img class="w-8 h-8" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                        alt="PHP Logo">
+                </div>
+                <img class="w-full rounded-md mb-3" src="./img/projek/kasir (2).png" alt="Gambar Portofolio">
+            </div>
+
+            <div
+                class="portfolio-card bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-lg p-4 max-w-sm sm:max-w-xs shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <h3 class="text-lg text-yellow-500 mb-2">sistem E-commerce</h3>
+                <div class="flex items-center gap-2 mb-3">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt="HTML Logo">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                        alt="CSS Logo">
+                    <img class="w-8 h-8" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        alt="JavaScript Logo">
+                    <img class="w-8 h-8" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+                        alt="Tailwind Logo">
+                    <img class="w-8 h-8" src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg"
+                        alt="PHP Logo">
+                </div>
+                <img class="w-full rounded-md mb-3" src="./img/projek/marketplace .jpg" alt="Gambar Portofolio">
+            </div>
+
+            <div
+                class="portfolio-card bg-gradient-to-br from-gray-800 to-gray-900 text-white rounded-lg p-4 max-w-sm sm:max-w-xs shadow-lg transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <h3 class="text-lg text-yellow-500 mb-2">web Portofolio</h3>
+                <div class="flex items-center gap-2 mb-3">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+                        alt="HTML Logo">
+                    <img class="w-8 h-8"
+                        src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                        alt="CSS Logo">
+                    <img class="w-8 h-8" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                        alt="JavaScript Logo">
+                </div>
+                <img class="w-full rounded-md mb-3" src="./img/projek/portofolio-new.png" alt="Gambar Portofolio">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- <section class="bg-gray-100 py-8 px-4 w3-text-black">
+        <h1 class="text-3xl font-bold mb-6 text-center text-gray-800">Contact Us</h1>
+        <form id="contact-form" class="space-y-4" method="POST">
+            <div>
+                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama Anda"
+                    class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 shadow-sm"
+                    required />
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda"
+                    class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 shadow-sm"
+                    required />
+            </div>
+            <div>
+                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Pesan</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan Anda..."
+                    class=" w3-text-black w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 shadow-sm resize-none"
+                    required></textarea>
+            </div>
+
+            <div class="flex justify-center">
+                <button type="submit"
+                    class="bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 focus:ring-2 focus:ring-blue-400 focus:outline-none transition-all duration-300">
+                    Kirim
+                </button>
+            </div>
+        </form>
+        <p id="response-message" class="text-center mt-4 text-sm font-medium"></p>
+    </section> -->
+
+    <footer class="bg-gray-100  text-black p-10 flex flex-wrap justify-between gap-5">
+        <div class="min-w-[250px]">
+            <h3 class="text-xl mb-4 border-b-2 border-blue-500 inline-block pb-1">Media Sosial</h3>
+            <div class="flex gap-4">
+                <a href="#" aria-label="Facebook"
+                    class="w-10 h-10 bg-blue-500 flex items-center justify-center rounded-full text-white text-lg hover:bg-blue-700 transition">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" aria-label="Twitter"
+                    class="w-10 h-10 bg-blue-500 flex items-center justify-center rounded-full text-white text-lg hover:bg-blue-700 transition">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" aria-label="Instagram"
+                    class="w-10 h-10 bg-blue-500 flex items-center justify-center rounded-full text-white text-lg hover:bg-blue-700 transition">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn"
+                    class="w-10 h-10 bg-blue-500 flex items-center justify-center rounded-full text-white text-lg hover:bg-blue-700 transition">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+        </div>
+        <div class="min-w-[250px]">
+            <h3 class="text-xl mb-4 border-b-2 border-blue-500 inline-block pb-1">Informasi Kontak</h3>
+            <p class="text-sm text-black mb-2"><i class="fas fa-map-marker-alt"></i> indonesia</p>
+            <p class="text-sm text-black mb-2"><i class="fas fa-phone"></i> +62 000000000</p>
+            <p class="text-sm text-black mb-2"><i class="fas fa-envelope"></i> codeekuu@gmail.com</p>
+        </div>
+        <div class="min-w-[250px]">
+        </div>
+    </footer>
+    <div class=" bg-gray-100 text-black text-center text-xs py-3 border-t border-gray-600">
+        Copyright &copy; codeekuu
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
